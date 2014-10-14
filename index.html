@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="listapp">
+	<head>
+		<title>Better CK Console Viewer</title>
+		<!-- Firebase -->
+		<script type='text/javascript' src='https://cdn.firebase.com/v0/firebase.js'></script>
+		
+		<!-- jquery -->
+		<!--[if lt IE 9]>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<![endif]-->
+		<!--[if (gte IE 9) | (!IE)]><!-->
+		<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js" type="text/javascript"></script>
+		<!--<![endif]-->
+
+		<!-- angularjs -->
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+
+		<!-- console library -->
+		<script type='text/javascript' src='javascripts/ck-console.js'></script>
+		<script type='text/javascript' src='javascripts/bootstrap.min.js'></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+		<style type="text/css">
+			html,
+			body {
+			height: 100%;
+			/* The html and body elements cannot have any padding or margin. */
+			}
+
+			/* Wrapper for page content to push down footer */
+			#wrap {
+			min-height: 100%;
+			height: auto !important;
+			height: 100%;
+			/* Negative indent footer by it's height */
+			margin: 0 auto -60px;
+			}
+
+			/* Set the fixed height of the footer here */
+			#push,
+			#footer {
+			height: 60px;
+			}
+			#footer {
+			background-color: #f5f5f5;
+			}
+
+			/* Lastly, apply responsive CSS fixes as necessary */
+			@media (max-width: 767px) {
+				#footer {
+				  margin-left: -20px;
+				  margin-right: -20px;
+				  padding-left: 20px;
+				  padding-right: 20px;
+				}
+			}
+
+			/* Custom page CSS
+			-------------------------------------------------- */
+			/* Not required for template or sticky footer method. */
+			/*
+			.container {
+			width: auto;
+			max-width: 680px;
+			}
+			*/
+			.container .credit {
+			margin: 20px 0;
+			}
+
+			body {
+				padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+			}
+			table{width:100%; margin-top:2em; border-collapse:collapse; border:1px solid #ccc;}
+			table th{padding:4px 10px; border:1px solid #ccc; background:#eee; border-top:2px solid #333; border-bottom:2px solid #333;}
+			table td{padding:4px 10px; border:1px solid #ccc;}
+			table:focus{outline:none;}
+			table td:focus{background:#FFD; outline:1px solid #08F;}
+			table td:active{background:#FFD;}
+		</style>
+
+	</head>
+	<body ng-controller="DataCtrl">
+		<script type="text/javascript">
+		app = angular.module('listapp', ['ckServices']);
+		app.controller('DataCtrl', ['$scope', '$compile', 'ckConsole', 'ckConsoleMap', '$http', function($scope, $compile, ckConsole, ckConsoleMap, $http){
+			ckConsole.getGroupList().then(function(groupList){
+				console.log(groupList);
+				$scope.dataList = [];
+				$scope.recorders = [];
+				function CompressedData (name, birthCert, members, size){
+					this.name = name;
+					this.requestName = name.replace(/ /g, "%");
+					this.size = size;
+					this.birthCert = birthCert;
+					//Formats the account email correctly
+					try{
+						this.birthCert.recorder = this.birthCert.recorder.replace(/\(at\)/g, "@").replace(/\(dot\)/g, ".");
+						this.recorder = this.birthCert.recorder;
+						if($.inArray(this.recorder, $scope.recorders) == -1){
+							$scope.recorders[$scope.recorders.length] = this.recorder;
+						}
+					} catch(e){
+						this.recorder = "";
+					}
+					this.members = members;
+					this.hasMedia = 'Loading';
+					var _this = this;
+					var count = 0;
+					for(var id in members){
+						if(count > 5 || this.hasMedia != 'Loading') break;
+						ckConsole.getData(id).then(function(dataSet){
+							//This peice of data has images associated with it
+							console.log(dataSet);
+							try{
+								Object.keys(dataSet.media.images).length;
+								_this.hasMedia = 'True';
+							} catch (e){
+								_this.hasMedia = 'False';
+							}
+						});
+						count ++;
+					}
+				}
+				for(var name in groupList){
+					var size;
+					try{
+						size = Object.keys(groupList[name].members).length;
+					} catch (e){
+						size = 'Undefined';
+						continue;
+					}
+					console.log("'" + name + "'" + ' size: ' + size);
+					$scope.dataList[$scope.dataList.length] = new CompressedData(name, groupList[name].birth_certificate, groupList[name].members, size);
+					$scope.ignoreNullComparator = function(actual, expected){
+						if (expected === null) {
+							return true;
+						} else {
+							return angular.equals(expected, actual);
+						}
+					};
+				}
+			});
+
+			$scope.hasMediaSelection = [
+				'True',
+				'False'
+			];
+		}]);
+		</script>
+		<div id="wrap">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+			    <div class="navbar-inner">
+			        <div class="container">
+			          	<a class="brand" href="#">Better CK Console Viewer</a>
+			        </div><!--/.nav-collapse -->
+	        	</div>
+	      	</div>
+			<div class="container">
+				Search: <input ng-model="search.$">
+				&nbsp;
+				<select ng-model="search.recorder" ng-options="recorder for recorder in recorders">
+					<option value="">-- Recorder --</option>
+				</select>
+				&nbsp;
+				<select ng-model="search.hasMedia" ng-options="selection for selection in hasMediaSelection">
+					<option value="">-- Has Media --</option>
+				</select>
+				<table id="sheet">
+					<tr><th>Group Name</th><th>Recorder</th><th>Has Media</th><th>Size</th></tr>
+					<tr ng-repeat="data in dataList | filter:search:ignoreNullComparator"><td><a href="dataDisplay.html?name={{data.requestName}}">{{data.name}}</a></td><td>{{data.recorder}}</td><td>{{data.hasMedia}}</td><td>{{data.size}}</td></tr>
+				</table>
+			</div>
+			<div id="push"></div>
+		</div>
+		<div id="footer">
+    		<div class="container">
+				<p class="muted credit">Created by Jonathan Leitschuh</p>
+			</div>
+		</div>
+	</body>
+</html>
