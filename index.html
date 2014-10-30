@@ -159,7 +159,7 @@
 	        	</div>
 	      	</div>
 			<div class="container">
-				Search: <input ng-model="search.$">
+				Search: <input ng-model="search_text">
 				&nbsp;
 				<select ng-model="search.recorder" ng-options="recorder for recorder in recorders">
 					<option value="">-- Recorder --</option>
@@ -170,7 +170,7 @@
 				</select>
 				<table id="sheet">
 					<tr><th>Group Name</th><th>Recorder</th><th>Has Media</th><th>Size</th></tr>
-					<tr ng-repeat="data in dataList | filter:search:ignoreNullComparator"><td><a href="dataDisplay.html?name={{data.requestName}}">{{data.name}}</a></td><td>{{data.recorder}}</td><td>{{data.hasMedia}}</td><td>{{data.size}}</td></tr>
+					<tr ng-repeat="data in dataList | filter:search:ignoreNullComparator | filter:search_text"><td><a href="dataDisplay.html?name={{data.requestName}}">{{data.name}}</a></td><td>{{data.recorder}}</td><td>{{data.hasMedia}}</td><td>{{data.size}}</td></tr>
 				</table>
 			</div>
 			<div id="push"></div>

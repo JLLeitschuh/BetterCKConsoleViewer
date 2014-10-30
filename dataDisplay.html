@@ -71,34 +71,74 @@
 		<script type="text/javascript">
 			var groupName = getRequestedDatasetName().replace(/%/g, " ");
 			console.log(groupName);
-			function Data(id, birthCert, data){
-				this.id = id;
-				this.birthCert = birthCert;
-				this.data = data;
-				this.dataHeaders = [];
-				for(var d in data){
-					this.dataHeaders[this.dataHeaders.length] = d;
-				}
-			}
 
 			app = angular.module('viewerapp', ['ckServices']);
 			app.controller('DataCtrl', ['$scope', '$compile', 'ckConsole', 'ckConsoleMap', '$http', function($scope, $compile, ckConsole, ckConsoleMap, $http){
+
+
+				function Data(id, birthCert, data, mediaList){
+					function ImageURLData(id, imageDataSet){
+						this.id = id;
+						this.thumb = imageDataSet.thumb;
+						this.small = imageDataSet.small;
+						this.medium = imageDataSet.medium;
+						this.original = imageDataSet.original;
+					}
+
+					this.id = id;
+					this.birthCert = birthCert;
+					this.data = data;
+					this.dataHeaders = [];
+					this.mediaList = [];
+					for(var d in data){
+						this.dataHeaders[this.dataHeaders.length] = d;
+					}
+					if(mediaList == null){
+						this.hasMedia = false;
+						return;
+					}
+
+					if($scope.mediaSizeMax < Object.keys(mediaList).length){
+						$scope.mediaSizeMax = Object.keys(mediaList).length;
+					}
+					this.hasMedia = true;
+					for(var mediaName in mediaList){
+						this.mediaList[this.mediaList.length] = new ImageURLData(mediaName, mediaList[mediaName]);
+					}
+					
+				}
+
 				$scope.dataName = groupName;
 				$scope.dataList = [];
+				$scope.mediaSizeMax = 0;
 				ckConsole.getGroup(groupName).then(function(infoData){
 					console.log(infoData);
 					$scope.dataHeaders = [];
 					for(var id in infoData.members){
 						var member = infoData.members[id];
-						var memberData = new Data(id, member.birth_certificate, member.data);
+						var images = null;
+						try{
+							images = member.media.images;
+						} catch (e){
+						}
+						var memberData = new Data(id, member.birth_certificate, member.data, images);
 						$scope.dataList[$scope.dataList.length] = memberData;
 						//Find the longest header
 						if($scope.dataHeaders.length < memberData.dataHeaders.length)
 							$scope.dataHeaders = memberData.dataHeaders;
 					}
+					console.log($scope.dataList);
 					$scope.totalDisplayed = ($scope.dataList.length < 500 ? $scope.dataList.length : 500);
 				});
 			}]);
+			app.filter('range', function() {
+				return function(input, total) {
+					total = parseInt(total);
+					for (var i=0; i<total; i++)
+						input.push(i);
+					return input;
+				};
+			});
 
 			function TableCtrl($scope){
 				$scope.loadMore = function () {
@@ -107,20 +147,20 @@
 			}
 		</script>
 		<div class="navbar navbar-inverse navbar-fixed-top">
-		    <div class="navbar-inner">
-		        <div class="container">
-		          	<a class="brand" href="index.html">Better CK Console Viewer</a>
-		        	</div><!--/.nav-collapse -->
-        		</div>
-      		</div>
-    	</div>
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="index.html">Better CK Console Viewer</a>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
 		<div class="container" ng-controller="TableCtrl">
 			<h1>{{dataName}}</h1>
 			Search: <input ng-model="searchText"> &nbsp;&nbsp;&nbsp;&nbsp; Displaying: <input ng-model="totalDisplayed"> of {{dataList.length}}.
 			<table id="sheet">
-				<tr><th>ID</th><th>birthID</th><th>dob</th><th>dor</th><th>lat</th><th>lon</th><th ng-repeat=" header in dataHeaders">{{header}}</th></tr>
+				<tr><th ng-repeat="n in [] | range:mediaSizeMax">Media: {{n}}</th><th>ID</th><th>birthID</th><th>dob</th><th>dor</th><th>lat</th><th>lon</th><th ng-repeat=" header in dataHeaders">{{header}}</th></tr>
 
-				<tr ng-repeat="data in dataList | limitTo:totalDisplayed | filter:searchText"><td>{{data.id}}</td><td>{{data.birthCert.birthID}}</td><td>{{data.birthCert.dob}}</td><td>{{data.birthCert.dor}}</td><td>{{data.birthCert.lat}}</td><td>{{data.birthCert.lon}}</td><td ng-repeat=" header in dataHeaders">{{data.data[header]}}</td></tr>
+				<tr ng-repeat="data in dataList | limitTo:totalDisplayed | filter:searchText"><td ng-repeat="n in [] | range:mediaSizeMax">{{data.mediaList[n].id}}<a href="{{data.mediaList[n].original}}"><img ng-src="{{data.mediaList[n].thumb}}"></img></a></td><td>{{data.id}}</td><td>{{data.birthCert.birthID}}</td><td>{{data.birthCert.dob}}</td><td>{{data.birthCert.dor}}</td><td>{{data.birthCert.lat}}</td><td>{{data.birthCert.lon}}</td><td ng-repeat=" header in dataHeaders">{{data.data[header]}}</td></tr>
 			</table>
 			<button class="btn" ng-click="loadMore()">Load more</button>
 		</div>
