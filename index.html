@@ -95,7 +95,9 @@
 					this.requestName = name.replace(/ /g, "%");
 					this.size = size;
 					this.birthCert = birthCert;
+
 					//Formats the account email correctly
+					console.log(this.birthCert);
 					try{
 						this.birthCert.recorder = this.birthCert.recorder.replace(/\(at\)/g, "@").replace(/\(dot\)/g, ".");
 						this.recorder = this.birthCert.recorder;
@@ -113,7 +115,7 @@
 						if(count > 5 || this.hasMedia != 'Loading') break;
 						ckConsole.getData(id).then(function(dataSet){
 							//This peice of data has images associated with it
-							console.log(dataSet);
+							//console.log(dataSet);
 							try{
 								Object.keys(dataSet.media.images).length;
 								_this.hasMedia = 'True';
@@ -132,16 +134,16 @@
 						size = 'Undefined';
 						continue;
 					}
-					console.log("'" + name + "'" + ' size: ' + size);
+					//console.log("'" + name + "'" + ' size: ' + size);
 					$scope.dataList[$scope.dataList.length] = new CompressedData(name, groupList[name].birth_certificate, groupList[name].members, size);
-					$scope.ignoreNullComparator = function(actual, expected){
-						if (expected === null) {
-							return true;
-						} else {
-							return angular.equals(expected, actual);
-						}
-					};
 				}
+				$scope.ignoreNullComparator = function(actual, expected){
+					if (expected === null) {
+						return true;
+					} else {
+						return angular.equals(expected, actual);
+					}
+				};
 			});
 
 			$scope.hasMediaSelection = [
@@ -169,8 +171,8 @@
 					<option value="">-- Has Media --</option>
 				</select>
 				<table id="sheet">
-					<tr><th>Group Name</th><th>Recorder</th><th>Has Media</th><th>Size</th></tr>
-					<tr ng-repeat="data in dataList | filter:search:ignoreNullComparator | filter:search_text"><td><a href="dataDisplay.html?name={{data.requestName}}">{{data.name}}</a></td><td>{{data.recorder}}</td><td>{{data.hasMedia}}</td><td>{{data.size}}</td></tr>
+					<tr><th>Group Name</th><th>Recorder</th><th>Dor</th><th>Has Media</th><th>Size</th></tr>
+					<tr ng-repeat="data in dataList | filter:search:ignoreNullComparator | filter:search_text"><td><a href="dataDisplay.html?name={{data.requestName}}">{{data.name}}</a></td><td>{{data.recorder}}</td><td>{{data.birthCert.dor}}</td><td>{{data.hasMedia}}</td><td>{{data.size}}</td></tr>
 				</table>
 			</div>
 			<div id="push"></div>
