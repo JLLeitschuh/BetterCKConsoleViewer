@@ -25,17 +25,17 @@
 		<style type="text/css">
 			html,
 			body {
-			height: 100%;
-			/* The html and body elements cannot have any padding or margin. */
+				height: 100%;
+				/* The html and body elements cannot have any padding or margin. */
 			}
 
 			/* Wrapper for page content to push down footer */
 			#wrap {
-			min-height: 100%;
-			height: auto !important;
-			height: 100%;
-			/* Negative indent footer by it's height */
-			margin: 0 auto -60px;
+				min-height: 100%;
+				height: auto !important;
+				height: 100%;
+				/* Negative indent footer by it's height */
+				margin: 0 auto -60px;
 			}
 
 			/* Set the fixed height of the footer here */
@@ -80,6 +80,13 @@
 			table td:focus{background:#FFD; outline:1px solid #08F;}
 			table td:active{background:#FFD;}
 		</style>
+
+		 <link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="css/gh-fork-ribbon.css">
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/gh-fork-ribbon.ie.css">
+		<![endif]-->
 
 	</head>
 	<body ng-controller="DataCtrl">
@@ -154,12 +161,12 @@
 		</script>
 		<div id="wrap">
 			<div class="navbar navbar-inverse navbar-fixed-top">
-			    <div class="navbar-inner">
-			        <div class="container">
-			          	<a class="brand" href="#">Better CK Console Viewer</a>
-			        </div><!--/.nav-collapse -->
-	        	</div>
-	      	</div>
+				<div class="navbar-inner">
+					<div class="container">
+					  	<a class="brand" href="#">Better CK Console Viewer</a>
+					</div><!--/.nav-collapse -->
+				</div>
+		  	</div>
 			<div class="container">
 				Search: <input ng-model="search_text">
 				&nbsp;
@@ -178,9 +185,17 @@
 			<div id="push"></div>
 		</div>
 		<div id="footer">
-    		<div class="container">
-				<p class="muted credit">Created by Jonathan Leitschuh</p>
+			<div class="container">
+				<p class="muted credit">Created by <a href="http://users.wpi.edu/~jlleitschuh/">Jonathan Leitschuh</a></p>
 			</div>
 		</div>
+		
+		<!-- BOTTOM RIGHT RIBBON: START COPYING HERE -->
+		<div class="github-fork-ribbon-wrapper right-bottom">
+			<div class="github-fork-ribbon">
+				<a href="https://github.com/JLLeitschuh/BetterCKConsoleViewer">Fork me on GitHub</a>
+			</div>
+		</div>
+		<!-- BOTTOM RIGHT RIBBON: END COPYING HERE -->
 	</body>
 </html>
