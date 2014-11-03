@@ -172,7 +172,7 @@
 				</select>
 				<table id="sheet">
 					<tr><th>Group Name</th><th>Recorder</th><th>Dor</th><th>Has Media</th><th>Size</th></tr>
-					<tr ng-repeat="data in dataList | filter:search:ignoreNullComparator | filter:search_text"><td><a href="dataDisplay.html?name={{data.requestName}}">{{data.name}}</a></td><td>{{data.recorder}}</td><td>{{data.birthCert.dor}}</td><td>{{data.hasMedia}}</td><td>{{data.size}}</td></tr>
+					<tr ng-repeat="data in dataList | filter:search:ignoreNullComparator | filter:search_text"><td><a href="dataDisplay.html?name={{data.requestName}}" target="_blank">{{data.name}}</a></td><td>{{data.recorder}}</td><td>{{data.birthCert.dor}}</td><td>{{data.hasMedia}}</td><td>{{data.size}}</td></tr>
 				</table>
 			</div>
 			<div id="push"></div>
