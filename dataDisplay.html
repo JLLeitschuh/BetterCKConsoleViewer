@@ -71,16 +71,6 @@
 	</head>
 	<body ng-controller="DataCtrl">
 		<script type="text/javascript">
-			Array.prototype.unique = function() {
-				var a = this.concat();
-				for(var i=0; i<a.length; ++i) {
-					for(var j=i+1; j<a.length; ++j) {
-						if(a[i] === a[j])
-							a.splice(j--, 1);
-					}
-				}
-				return a;
-			};
 
 			var groupName = getRequestedDatasetName().replace(/%/g, " ");
 			console.log(groupName);
@@ -137,7 +127,7 @@
 						var memberData = new Data(id, member.birth_certificate, member.data, images);
 						$scope.dataList[$scope.dataList.length] = memberData;
 						//Find the longest header
-						$scope.dataHeaders = $scope.dataHeaders.concat(memberData.dataHeaders).unique();
+						$scope.dataHeaders = _.uniq($scope.dataHeaders.concat(memberData.dataHeaders));
 						//$scope.dataHeaders = memberData.dataHeaders;
 					}
 
@@ -221,9 +211,8 @@
 						angular.forEach(allheaderData, function(headerData, header){
 							angular.forEach(headerData.selectedValues, function(selectedValue){
 								angular.forEach(elements, function(element){
-									if(angular.equals(element.data[header], selectedValue)){
+									if(angular.equals(element.data[header], selectedValue) && !_.contains(tempElements, element)){
 										tempElements.push(element);
-									} else if(!$scope.filtersAdditive) {
 									}
 								});
 							});
