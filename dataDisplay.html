@@ -132,7 +132,7 @@
 					console.log($scope.dataList);
 
 
-					var maxIterateSize = 20;
+					var maxIterateSize = 100;
 					var iterateSize = ($scope.dataList.length < maxIterateSize ? $scope.dataList.length : maxIterateSize);
 					//Check to see if its worth it to create a dropdown for a header
 					var tableValuesForHeader = {};
@@ -177,7 +177,8 @@
 						for(var i = 0; i < (tableValuesForHeader[header].duplicateFound ? $scope.dataList.length : iterateSize); i++){
 							var data = $scope.dataList[i].data;
 							if(data[header] == ""){
-								//If the field is undefined then skip it
+								//If the field is undefined then skip it but search one space further
+								iterateSize = (iterateSize + 1 > $scope.dataList.length ? $scope.dataList.length : iterateSize + 1);
 								continue;
 							}
 							if(tableValuesForHeader[header].values.indexOf(data[header]) == -1){
