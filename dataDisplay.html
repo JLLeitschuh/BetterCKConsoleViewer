@@ -297,7 +297,7 @@
 					</th>
 				</tr><!--END HEADERS-->
 				<!--DATA DISPLAY-->
-				<tr ng-repeat="data in filtered = (dataList | limitTo:totalDisplayed | filter:searchText | columnFilter:tableValuesForHeader)">
+				<tr ng-repeat="data in filtered = (dataList | filter:searchText | columnFilter:tableValuesForHeader | limitTo:totalDisplayed)">
 					<td ng-repeat="n in [] | range:mediaSizeMax">{{data.mediaList[n].id}}
 						<a href="{{data.mediaList[n].original}}">
 							<img ng-src="{{data.mediaList[n].thumb}}"></img>
