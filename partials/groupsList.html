@@ -1,0 +1,32 @@
+<div id="wrap">
+	<div class="container">
+		<p>This page may take a long time to load. This is normal. Please only reload the page if it takes longer than 2 minutes to load</p>
+		Search: <input ng-model="search_text">
+		&nbsp;
+		<select ng-model="search.recorder" ng-options="recorder for recorder in recorders">
+			<option value="">-- Recorder --</option>
+		</select>
+		&nbsp;
+		<select ng-model="search.hasMedia" ng-options="selection for selection in hasMediaSelection">
+			<option value="">-- Has Media --</option>
+		</select>
+		<table id="sheet">
+			<tr><th>Group Name</th><th>Recorder</th><th>Dor</th><th>Has Media</th><th>Size</th></tr>
+			<tr ng-repeat="data in dataList | filter:search:ignoreNullComparator | filter:search_text">
+				<td>
+					<a ng-href="./#/group/{{data.requestName}}">{{data.name}}</a>
+				</td>
+				<td>{{data.recorder}}</td>
+				<td>{{data.birthCert.dor}}</td>
+				<td>{{data.hasMedia}}</td>
+				<td>{{data.size}}</td>
+			</tr>
+		</table>
+	</div>
+	<div id="push"></div>
+</div>
+<div id="footer">
+	<div class="container">
+		<p class="muted credit">Created by <a href="http://users.wpi.edu/~jlleitschuh/">Jonathan Leitschuh</a></p>
+	</div>
+</div>
