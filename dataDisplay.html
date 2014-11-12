@@ -255,25 +255,60 @@
 			Search: <input ng-model="searchText"> &nbsp;&nbsp;&nbsp;&nbsp; <!-- Exclude: <input ng-model="excludeText"> &nbsp;&nbsp;&nbsp;&nbsp; --> Displaying max: <input ng-model="totalDisplayed"> of {{dataList.length}}. &nbsp;&nbsp;&nbsp;&nbsp; Filters showing: {{filtered.length}}. &nbsp;&nbsp;&nbsp;&nbsp; <button class="btn" ng-click="uncheckAll()"> Uncheck All</button>
 
 			<table id="sheet">
-				<tr><th ng-repeat="n in [] | range:mediaSizeMax">Media: {{n}}</th><th>ID</th><th>birthID</th><th>dob</th><th>dor</th><th>lat</th><th>lon</th>
+				<tr> <!--SUPER HEADERS-->
+					<th ng-show=" mediaSizeMax > 0" colspan="{{mediaSizeMax}}">Media</th>
+					<th colspan="6">Birth Certificate</th>
+					<th ng-show=" dataHeaders.length > 0" colspan="{{dataHeaders.length}}">Data</th>
+				</tr><!--END SUPER HEADERS-->
+				<tr> <!--HEADERS-->
+					<th ng-repeat="n in [] | range:mediaSizeMax">Media: {{n}}</th>
+					<th>ID</th><th>birthID</th><th>dob</th><th>dor</th><th>lat</th><th>lon</th>
 					<th ng-repeat=" (header, headerData) in tableValuesForHeader" ng-switch="headerData.duplicateFound">
+						<!--IF THERE SHOULD BE A DROP DOWN-->
 						<div ng-switch-when="true">
 							<div class="btn-group" data-ng-class="{open: headerData.dropDownOpen}">
 								<button class="btn"> {{header}}</button>
-								<button class="btn dropdown-toggle" data-ng-click="headerData.toggleDropDown()"><span class="caret"></span></button>
+								<button class="btn dropdown-toggle" data-ng-click="headerData.toggleDropDown()">
+									<span class="caret"></span>
+								</button>
 								<ul class="dropdown-menu" aria-labelledby="dropdownMenu">
-									<li><a data-ng-click="tableValuesForHeader[header].checkAll()"><i class="icon-ok-sign"></i>  Check All</a>
+									<li>
+										<a data-ng-click="tableValuesForHeader[header].checkAll()">
+											<i class="icon-ok-sign"></i>  Check All
+										</a>
 									</li>
-									<li><a data-ng-click="tableValuesForHeader[header].selectedValues=[];"><i class="icon-remove-sign"></i>  Uncheck All</a></li>
+									<li>
+										<a data-ng-click="tableValuesForHeader[header].selectedValues=[];">
+											<i class="icon-remove-sign"></i>  Uncheck All
+										</a>
+									</li>
 									<li class="divider"></li>
-									<li ng-repeat="value in headerData.values"><a data-ng-click="headerData.setSelected(value)" style="text-align: left;">{{value}} &nbsp; ({{headerData.valuesWithCount[value]}})<span data-ng-class="headerData.isChecked(value)"></span></a></li>
+									<!-- Values that can be selected are displayed here -->
+									<li ng-repeat="value in headerData.values">
+										<a data-ng-click="headerData.setSelected(value)" style="text-align: left;">{{value}} &nbsp; ({{headerData.valuesWithCount[value]}})
+											<span data-ng-class="headerData.isChecked(value)"></span>
+										</a>
+									</li>
 								</ul>
 							</div>
 						</div>
+						<!--IF THERE SHOULD NOT BE A DROP DOWN-->
 						<div ng-switch-default>{{header}}</div>
-					</th></tr>
-
-				<tr ng-repeat="data in filtered = (dataList | limitTo:totalDisplayed | filter:searchText | columnFilter:tableValuesForHeader)"><td ng-repeat="n in [] | range:mediaSizeMax">{{data.mediaList[n].id}}<a href="{{data.mediaList[n].original}}"><img ng-src="{{data.mediaList[n].thumb}}"></img></a></td><td>{{data.id}}</td><td>{{data.birthCert.birthID}}</td><td>{{data.birthCert.dob}}</td><td>{{data.birthCert.dor}}</td><td>{{data.birthCert.lat}}</td><td>{{data.birthCert.lon}}</td><td ng-repeat=" header in dataHeaders">{{data.data[header]}}</td></tr>
+					</th>
+				</tr><!--END HEADERS-->
+				<!--DATA DISPLAY-->
+				<tr ng-repeat="data in filtered = (dataList | limitTo:totalDisplayed | filter:searchText | columnFilter:tableValuesForHeader)">
+					<td ng-repeat="n in [] | range:mediaSizeMax">{{data.mediaList[n].id}}
+						<a href="{{data.mediaList[n].original}}">
+							<img ng-src="{{data.mediaList[n].thumb}}"></img>
+						</a>
+					</td>
+					<td>{{data.id}}</td><td>{{data.birthCert.birthID}}</td>
+					<td>{{data.birthCert.dob}}</td><td>{{data.birthCert.dor}}</td>
+					<td>{{data.birthCert.lat}}</td><td>{{data.birthCert.lon}}</td>
+					<td ng-repeat=" (header, headerData) in tableValuesForHeader ">{{data.data[header]}}</td>
+				</tr>
+				<!--END DATA DISPLAY-->
 			</table>
 			<button class="btn" ng-click="loadMore()">Load more</button>
 		</div>
