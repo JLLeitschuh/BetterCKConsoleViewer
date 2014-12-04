@@ -1,6 +1,40 @@
 "use strict";
 console.log('loading controllers');
 angular.module('CKConsoleViewerApp.controllers', []).
+	controller('navigationController', function($scope, $modal, $log){
+		$scope.openAbout = function (size) {
+			var modalInstance = $modal.open({
+				templateUrl: 'aboutModal.html',
+				controller: 'ModalInstanceController',
+				size: size
+			});
+
+			modalInstance.result.then(function () {}, function () {
+				$log.info('Modal dismissed at: ' + new Date());
+			});
+		};
+		$scope.openHelp = function (size) {
+			var modalInstance = $modal.open({
+				templateUrl: 'helpModal.html',
+				controller: 'ModalInstanceController',
+				size: size
+			});
+
+			modalInstance.result.then(function () {}, function () {
+				$log.info('Modal dismissed at: ' + new Date());
+			});
+		};
+	}).
+	controller('ModalInstanceController', function($scope, $modalInstance){
+		$scope.ok = function () {
+			$modalInstance.close();
+		};
+
+		$scope.cancel = function () {
+			$modalInstance.dismiss('cancel');
+		};
+
+	}).
 	controller('groupsListController', function($scope, GroupListService){
 
 		$scope.dataList = GroupListService.groupList;

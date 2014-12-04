@@ -1,4 +1,35 @@
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<script type="text/ng-template" id="aboutModal.html">
+	<div class="modal-header">
+		<h3 class="modal-title">About</h3>
+	</div>
+	<div class="modal-body">
+		This was created to make you life easier. Basically, I got tired working with the CK Console and trying to figure out what data was actually available on the CK-Console. One late evening at 2:00 am this project was born.</br></br>
+		Isn't it wonderful that you can view all of the CK Console's data without needing the admin login? My point exactly.</br></br>
+		Another perk! You can not break the VPC website using this viewer (Somone, in-fact, did do this durring the 2014 Venice IQP). Unlike the CK Console this only lets you view the data but not actually manipulate it.
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" ng-click="ok()">OK</button>
+	</div>
+</script>
+
+<script type="text/ng-template" id="helpModal.html">
+	<div class="modal-header">
+		<h3 class="modal-title">Help</h3>
+	</div>
+	<div class="modal-body">
+		<p>
+			There is no help! You got yourself into this mess, figure out how to get yourself out.</br></br>
+
+			But in all seriousness.... If you encounter a debelitating bug then please feel free to file a bug report <a href="https://github.com/JLLeitschuh/BetterCKConsoleViewer/issues">here</a>. I may or may not get arround to fixing it depending upon my schedule. If you are a programmer then please feel free to fork this project and make your own contributions.</br></br>
+			-Jonathan
+		</p>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" ng-click="ok()">OK</button>
+	</div>
+</script>
+
+<nav ng-controller="navigationController" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -7,14 +38,15 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Better CK Console Viewer</a>
+			<a class="navbar-brand" href="./#/">Better CK Console Viewer</a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="./#/">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#contact">Contact</a></li>
-				<li class="dropdown">
+				<li><a ng-click="openAbout('med')">About</a></li>
+				<li><a ng-click="openHelp('med')">Help</a></li>
+				<li><a href="console.cityknowledge.net">CK Console</a></li>
+				<!--<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
 						<li><a href="#">Action</a></li>
@@ -25,7 +57,7 @@
 						<li><a href="#">Separated link</a></li>
 						<li><a href="#">One more separated link</a></li>
 					</ul>
-				</li>
+				</li> -->
 			</ul>
 		</div><!--/.nav-collapse -->
 	</div>
