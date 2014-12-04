@@ -4,6 +4,7 @@ console.log('loading app');
 angular.
 	module('CKConsoleViewerApp', [
 		'CKConsoleViewerApp.controllers',
+		'CKConsoleViewerApp.services',
 		'ckServices',
 		'ui.bootstrap',
 		'ngRoute'

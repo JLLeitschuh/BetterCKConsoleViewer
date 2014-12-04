@@ -1,66 +1,18 @@
 "use strict";
 console.log('loading controllers');
 angular.module('CKConsoleViewerApp.controllers', []).
-	controller('groupsListController', function($scope, ckConsole){
-		ckConsole.getGroupList().then(function(groupList){
-			console.log(groupList);
-			$scope.dataList = [];
-			$scope.recorders = [];
-			function CompressedData (name, birthCert, members, size){
-				this.name = name;
-				this.requestName = encodeURI(name);
-				this.size = size;
-				this.birthCert = birthCert;
+	controller('groupsListController', function($scope, GroupListService){
 
-				//Formats the account email correctly
-				console.log(this.birthCert);
-				try{
-					this.birthCert.recorder = this.birthCert.recorder.replace(/\(at\)/g, "@").replace(/\(dot\)/g, ".");
-					this.recorder = this.birthCert.recorder;
-					if($.inArray(this.recorder, $scope.recorders) == -1){
-						$scope.recorders[$scope.recorders.length] = this.recorder;
-					}
-				} catch(e){
-					this.recorder = "";
-				}
-				this.members = members;
-				this.hasMedia = 'Loading';
-				var _this = this;
-				var count = 0;
-				for(var id in members){
-					if(count > 5 || this.hasMedia != 'Loading') break;
-					ckConsole.getData(id).then(function(dataSet){
-						//This peice of data has images associated with it
-						//console.log(dataSet);
-						try{
-							Object.keys(dataSet.media.images).length;
-							_this.hasMedia = 'True';
-						} catch (e){
-							_this.hasMedia = 'False';
-						}
-					});
-					count ++;
-				}
+		$scope.dataList = GroupListService.groupList;
+		$scope.recorders = GroupListService.recorders;
+
+		$scope.ignoreNullComparator = function(actual, expected){
+			if (expected === null) {
+				return true;
+			} else {
+				return angular.equals(expected, actual);
 			}
-			for(var name in groupList){
-				var size;
-				try{
-					size = Object.keys(groupList[name].members).length;
-				} catch (e){
-					size = 'Undefined';
-					continue;
-				}
-				//console.log("'" + name + "'" + ' size: ' + size);
-				$scope.dataList[$scope.dataList.length] = new CompressedData(name, groupList[name].birth_certificate, groupList[name].members, size);
-			}
-			$scope.ignoreNullComparator = function(actual, expected){
-				if (expected === null) {
-					return true;
-				} else {
-					return angular.equals(expected, actual);
-				}
-			};
-		});
+		};
 
 		$scope.hasMediaSelection = [
 			'True',
