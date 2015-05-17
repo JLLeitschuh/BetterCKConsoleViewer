@@ -91,11 +91,17 @@ angular.module('CKConsoleViewerApp.controllers', []).
 			for(var mediaName in mediaList){
 				this.mediaList[this.mediaList.length] = new ImageURLData(mediaName, mediaList[mediaName]);
 			}
-
+		}
+		function SimpleData(dataObj){
+			this.id = dataObj.id;
+			for(var id in dataObj.data){
+				this[id] = dataObj.data[id];
+			}
 		}
 
 		$scope.dataName = groupName;
 		$scope.dataList = [];
+		$scope.simpleDataList = [];
 		$scope.mediaSizeMax = 0;
 		ckConsole.getGroup(groupName).then(function(infoData){
 			$scope.progressPercent = 30;
@@ -118,6 +124,7 @@ angular.module('CKConsoleViewerApp.controllers', []).
 				//Find the longest header
 				$scope.dataHeaders = _.uniq($scope.dataHeaders.concat(memberData.dataHeaders));
 				//$scope.dataHeaders = memberData.dataHeaders;
+				$scope.simpleDataList[$scope.simpleDataList.length] = new SimpleData(memberData);
 			}
 
 			console.log($scope.dataList);
@@ -186,6 +193,7 @@ angular.module('CKConsoleViewerApp.controllers', []).
 					}
 				}
 			}
+
 			console.log(tableValuesForHeader);
 			$scope.progressPercent = 100;
 
@@ -207,6 +215,13 @@ angular.module('CKConsoleViewerApp.controllers', []).
 		$scope.filtersAdditiveSelection = [false, true];
 		$scope.filtersAdditive = false;
 
+		$scope.gridOptions = {
+			data: 'simpleDataList',
+			enableSorting: true,
+			showColumnMenu: true,
+			enableColumnReordering: true,
+			enableColumnResize: true
+		};
 
 	}).
 

@@ -11,11 +11,12 @@
 			<option value="">-- Has Media --</option>
 		</select>
 		<table id="sheet">
-			<tr><th>Group Name</th><th>Recorder</th><th>Dor</th><th>Has Media</th><th>Size</th></tr>
+			<tr><th>Group Name</th><th>Viewer (Alpha)</th><th>Recorder</th><th>Dor</th><th>Has Media</th><th>Size</th></tr>
 			<tr ng-repeat="data in dataList | filter:search:ignoreNullComparator | filter:search_text">
 				<td>
 					<a ng-href="./#/group/{{data.requestName}}">{{data.name}}</a>
 				</td>
+				<td> <a ng-href="./#/group-ngGrid/{{data.requestName}}">ngGrid</a> </td>
 				<td>{{data.recorder}}</td>
 				<td>{{data.birthCert.dor}}</td>
 				<td>{{data.hasMedia}}</td>

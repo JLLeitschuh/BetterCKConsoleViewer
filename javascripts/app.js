@@ -5,6 +5,7 @@ angular.
 	module('CKConsoleViewerApp', [
 		'CKConsoleViewerApp.controllers',
 		'CKConsoleViewerApp.services',
+		'ngGrid',
 		'ckServices',
 		'ui.bootstrap',
 		'ngRoute'
@@ -14,6 +15,7 @@ angular.
 		$routeProvider.
 			when("/home", {templateUrl: "partials/groupsList.html", controller: "groupsListController"}).
 			when("/group/:group", {templateUrl: "partials/dataDisplay.html", controller: "dataDisplayController"}).
+			when("/group-ngGrid/:group", {templateUrl: "partials/ngGridDataDisplay.html", controller: "dataDisplayController"}).
 			otherwise({redirectTo: '/home'});
 		}
 	]);
