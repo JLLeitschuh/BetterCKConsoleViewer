@@ -15,7 +15,7 @@ angular.
 		$routeProvider.
 			when("/home", {templateUrl: "partials/groupsList.html", controller: "groupsListController"}).
 			when("/group/:group", {templateUrl: "partials/dataDisplay.html", controller: "dataDisplayController"}).
-			when("/group-ngGrid/:group", {templateUrl: "partials/ngGridDataDisplay.html", controller: "dataDisplayController"}).
+			when("/group-ngGrid/:group", {templateUrl: "partials/ngGridDataDisplay.html", controller: "ngDataDisplayController"}).
 			otherwise({redirectTo: '/home'});
 		}
 	]);

@@ -86,8 +86,29 @@ angular.module('CKConsoleViewerApp.services', []).
 		return service;
 	}).
 
-	factory('DataListService', function(){
-
+	factory('DataListService', function($q, ckConsole){
+		// var _this = this;
+		// this.groups = {};
+		//
+		// function SimpleData(dataObj){
+		// 	this.id = dataObj.id;
+		// 	for(var id in dataObj.data){
+		// 		this[id] = dataObj.data[id];
+		// 	}
+		// }
+		//
+		// this.getDataList = function(groupName){
+		// 	if(_this.groups[groupName]){
+		// 		console.log("Getting cached version of dataList: "+ groupname);
+		// 		return _this.groups[groupName];
+		// 	} else {
+		// 		var deferred = $q.defer();
+		// 		ckConsole.getGroup(groupName).then(function(infoData){
+		// 			//deferred
+		//
+		// 		});
+		// 	}
+		// };
 	}).
 
 	factory("CookieManager", function(){
