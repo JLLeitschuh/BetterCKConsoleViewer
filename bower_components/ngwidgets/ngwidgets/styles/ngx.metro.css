@@ -1,0 +1,319 @@
+.ngx-rc-tl-metro
+{
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.ngx-rc-tr-metro
+{
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.ngx-rc-bl-metro
+{
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.ngx-rc-br-metro
+{
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+/*top rounded Corners*/
+.ngx-rc-t-metro
+{
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+/*bottom rounded Corners*/
+.ngx-rc-b-metro
+{
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+/*right rounded Corners*/
+.ngx-rc-r-metro
+{
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+/*left rounded Corners*/
+.ngx-rc-l-metro
+{
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+/*all rounded Corners*/
+.ngx-rc-all-metro
+{
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+.ngx-widget-metro {
+    font-size: 12px;
+    font-family: 'segoe ui', arial, sans-serif;
+}
+.ngx-widget-content-metro{font-size: 12px; font-family: 'segoe ui', arial, sans-serif; border-color: #e5e5e5; color: #767676; background-color: #fff;}
+.ngx-widget-header-metro{font-size: 12px; font-family: 'segoe ui', arial, sans-serif; color: #767676; border-color:#e5e5e5; background-color:#f4f4f4;}
+.ngx-fill-state-normal-metro{font-size: 12px; font-family: 'segoe ui', arial, sans-serif; border-color: #e5e5e5; color: #767676; background: #ffffff;}
+.ngx-button-metro {border-color: #e5e5e5;}
+.ngx-fill-state-hover-metro{border-color:#dedede; color: #000; background-color:#dedede;
+
+}
+.ngx-fill-state-focus-metro { border-color: #cdcdcd; }
+.ngx-fill-state-pressed-metro{border-color:#1faeff; color: #fff; background-color:#1faeff;
+
+}
+.ngx-input-metro {
+    border-color: #e5e5e5;
+}
+.ngx-scrollbar-state-normal-metro, .ngx-grid-bottomright-metro, .ngx-panel-bottomright-metro, .ngx-listbox-bottomright-metro{background-color:#f0f0f0;}
+.ngx-widget-metro .ngx-grid-column-header-metro, .ngx-grid-cell-metro, .ngx-widget-metro .ngx-grid-cell-metro, .ngx-widget-metro .ngx-grid-group-cell-metro, .ngx-grid-group-cell-metro{font-size: 12px; font-family: 'segoe ui', arial, sans-serif; border-color:#f0f0f0;}
+.ngx-tabs-title-selected-bottom-metro, .ngx-tabs-selection-tracker-bottom-metro, .ngx-tabs-title-selected-top-metro, .ngx-tabs-selection-tracker-top-metro{color: #767676; border-color:#e5e5e5; border-bottom:1px solid #fff; background:#fff}
+.ngx-grid-cell-sort-alt-metro, .ngx-grid-cell-filter-alt-metro, .ngx-grid-cell-pinned-metro, .ngx-grid-cell-alt-metro, .ngx-grid-cell-sort-metro{ background-color:#ededed; color: #000;}
+.ngx-menu-vertical-metro{background: #fff; border-color: #e5e5e5;}
+.ngx-widget-metro .ngx-grid-cell-metro, .ngx-widget-metro .ngx-grid-column-header-metro, .ngx-widget-metro .ngx-grid-group-cell-metro {color: #000; border-color: #e5e5e5;}
+.ngx-widget-metro .ngx-grid-column-menubutton-metro, .ngx-widget-metro .ngx-grid-column-sortascbutton-metro, .ngx-widget-metro .ngx-grid-column-sortdescbutton-metro, .ngx-widget-metro .ngx-grid-column-filterbutton-metro {
+    background-color: transparent;
+    border-color: #e5e5e5;
+}
+.ngx-window-header-metro, .ngx-input-button-header-metro, .ngx-calendar-title-header-metro, .ngx-grid-metro .ngx-widget-header-metro, .ngx-grid-header-metro, .ngx-grid-column-header-metro {font-size: 12px; font-family: 'segoe ui', arial, sans-serif; border-color: #e5e5e5; color: #767676; background: #f4f4f4;}
+.ngx-grid-column-menubutton-metro {
+    background-image: url('images/metro-icon-down.png');
+ }
+.ngx-widget-metro .ngx-grid-cell-selected-metro, .ngx-grid-cell-selected-metro{ background-color:#1faeff; border-color: #1faeff; font-size: 12px;  color:#fff;}
+.ngx-grid-cell-hover-metro{ background-color:#dedede;}
+ /*applied to the column's sort button when the sort order is ascending.*/
+ .ngx-grid-column-sortascbutton-metro {
+    background-image: url('images/metro-icon-up.png');
+ }
+.ngx-grid-column-sortdescbutton-metro {
+    background-image: url('images/metro-icon-down.png');
+}
+.ngx-checkbox-hover-metro {
+    background-color: #fff;
+}
+.ngx-radiobutton-hover-metro {
+    background-color: #fff;
+}
+.ngx-scrollbar-thumb-state-normal-horizontal-metro, .ngx-scrollbar-thumb-state-normal-metro {
+    background: #cdcdcd; border-color: #cdcdcd;
+}
+.ngx-scrollbar-thumb-state-hover-horizontal-metro, .ngx-scrollbar-thumb-state-hover-metro {
+    background: #a6a6a6; border-color: #a6a6a6;
+}
+.ngx-scrollbar-thumb-state-pressed-horizontal-metro, .ngx-scrollbar-thumb-state-pressed-metro {
+    background: #606060; border-color: #606060;
+}
+.ngx-scrollbar-button-state-normal-metro
+{
+    border: 1px solid #f0f0f0; 
+    background: #f0f0f0;
+}
+/*applied to the scrollbar buttons in hovered state.*/
+.ngx-scrollbar-button-state-hover-metro
+{
+    border: 1px solid #dadada;
+    background: #dadada;
+}
+/*applied to the scrollbar buttons in pressed state.*/
+.ngx-scrollbar-button-state-pressed-metro
+{
+    border: 1px solid #606060;
+    background: #606060;
+}
+
+/*icons*/
+.ngx-window-collapse-button-metro
+{
+    background-image: url(images/metro-icon-up.png);
+}
+.ngx-window-collapse-button-collapsed-metro {
+  background-image: url(images/metro-icon-down.png);
+}
+.ngx-icon-arrow-up-metro, .ngx-expander-arrow-bottom-metro, .ngx-menu-item-arrow-up-metro
+{
+    background-image: url('images/metro-icon-up.png');
+}
+.ngx-icon-arrow-down-metro, .ngx-expander-arrow-top-metro, .ngx-tree-item-arrow-expand-metro, .ngx-tree-item-arrow-expand-hover-metro, .ngx-menu-item-arrow-down-metro
+{
+    background-image: url('images/metro-icon-down.png');
+}
+.ngx-icon-arrow-left-metro, .ngx-menu-item-arrow-left-metro
+{
+    background-image: url('images/metro-icon-left.png');
+}
+.ngx-icon-arrow-right-metro, .ngx-menu-item-arrow-right-metro, .ngx-tree-item-arrow-collapse-metro, .ngx-tree-item-arrow-collapse-hover-metro
+{
+    background-image: url('images/metro-icon-right.png');
+}
+.ngx-tabs-arrow-left-metro, .ngx-tree-item-arrow-collapse-rtl-metro, .ngx-tree-item-arrow-collapse-hover-rtl-metro
+{
+    background-image: url('images/metro-icon-left.png');
+}
+.ngx-tabs-arrow-right-metro
+{
+    background-image: url('images/metro-icon-right.png');
+}
+.ngx-menu-item-arrow-up-selected-metro, .ngx-icon-arrow-up-selected-metro{background-image:url('images/metro-icon-up-white.png');background-repeat:no-repeat;background-position:center;}
+.ngx-menu-item-arrow-down-selected-metro, .ngx-icon-arrow-down-selected-metro{background-image:url('images/metro-icon-down-white.png');background-repeat:no-repeat;background-position:center;}
+.ngx-menu-item-arrow-left-selected-metro, .ngx-icon-arrow-left-selected-metro{background-image:url('images/metro-icon-left-white.png');background-repeat:no-repeat;background-position:center;}
+.ngx-menu-item-arrow-right-selected-metro, .ngx-icon-arrow-right-selected-metro{background-image:url('images/metro-icon-right-white.png');background-repeat:no-repeat;background-position:center;}
+.ngx-tabs-close-button-metro{background-image:url(images/close.png);  background-repeat:no-repeat;  background-position:center;}
+.ngx-tabs-close-button-selected-metro{background-image:url(images/close.png);  background-repeat:no-repeat;  background-position:center;}
+.ngx-tabs-close-button-hover-metro{background-image:url(images/close.png);  background-repeat:no-repeat;  background-position:center;}
+.ngx-scrollbar-metro .ngx-icon-arrow-up-selected-metro{background-image:url('images/metro-icon-up-white.png'); background-repeat:no-repeat; background-position:center;}
+.ngx-scrollbar-metro .ngx-icon-arrow-down-selected-metro{background-image:url('images/metro-icon-down-white.png'); background-repeat:no-repeat; background-position:center;}
+.ngx-scrollbar-metro .ngx-icon-arrow-left-selected-metro{background-image:url('images/metro-icon-left-white.png'); background-repeat:no-repeat; background-position:center;}
+.ngx-scrollbar-metro .ngx-icon-arrow-right-selected-metro{background-image:url('images/metro-icon-right-white.png');background-repeat:no-repeat; background-position:center;}
+.ngx-slider-slider-metro
+{
+    border-color:#cdcdcd;
+}
+.ngx-slider-button-metro
+{
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+    border-color: #cdcdcd;
+}
+.ngx-input-button-content-metro
+{  
+    font-size: 10px;
+}
+.ngx-dropdownlist-state-normal-metro, .ngx-dropdownlist-state-hover-metro, .ngx-dropdownlist-state-selected-metro,
+.ngx-scrollbar-button-state-hover-metro, .ngx-scrollbar-button-state-normal-metro, .ngx-scrollbar-button-state-pressed-metro,
+.ngx-scrollbar-thumb-state-normal-horizontal-metro, .ngx-scrollbar-thumb-state-hover-horizontal-metro, .ngx-scrollbar-thumb-state-pressed-horizontal-metro,
+.ngx-scrollbar-thumb-state-normal-metro, .ngx-scrollbar-thumb-state-pressed-metro, .ngx-button-metro, .ngx-tree-item-hover-metro, .ngx-tree-item-selected-metro,
+.ngx-tree-item-metro, .ngx-menu-item-metro, .ngx-menu-item-hover-metro, .ngx-menu-item-selected-metro, .ngx-menu-item-top-metro, .ngx-menu-item-top-hover-metro, 
+.ngx-menu-item-top-selected-metro, .ngx-slider-button-metro, .ngx-slider-slider-metro
+ {
+    -webkit-transition: background-color 100ms linear;
+     -moz-transition: background-color 100ms linear;
+     -o-transition: background-color 100ms linear;
+     -ms-transition: background-color 100ms linear;
+     transition: background-color 100ms linear;
+}
+.ngx-switchbutton-metro {
+    -moz-border-radius: 0px; 
+    -webkit-border-radius: 0px; 
+    border-radius: 0px;
+    border: 2px solid #a6a6a6;
+}
+.ngx-switchbutton-thumb-metro {
+    width: 12px;
+    background: #000;
+    border: 1px solid #000;
+}
+.ngx-switchbutton-label-on-metro {
+    background: #1faeff;
+    color: #1faeff;
+}
+.ngx-switchbutton-label-off-metro {
+    background: #a6a6a6;
+    color: #a6a6a6;
+}
+
+.ngx-switchbutton-wrapper-metro {
+}
+.ngx-grid-cell-metro.ngx-grid-cell-selected-metro>.ngx-grid-group-expand-metro {
+    background-image: url('images/metro-icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-cell-metro.ngx-grid-cell-selected-metro>.ngx-grid-group-collapse-metro{
+    background-image: url('images/metro-icon-right-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-cell-metro.ngx-grid-cell-selected-metro>.ngx-grid-group-collapse-rtl-metro {
+    background-image: url('images/metro-icon-left-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-cell-metro.ngx-grid-cell-selected-metro>.ngx-grid-group-expand-rtl-metro{
+    background-image: url('images/metro-icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-group-collapse-metro {
+    background-image: url(images/metro-icon-right.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.ngx-grid-group-collapse-rtl-metro
+{
+    padding-right: 0px;
+    background-image: url(images/metro-icon-left.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.ngx-grid-group-expand-metro, .ngx-grid-group-expand-rtl-metro
+{
+    padding-right: 0px;
+    background-image: url(images/metro-icon-down.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.ngx-icon-arrow-first-metro
+{
+    background-image: url('images/metro-icon-first.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-last-metro
+{
+    background-image: url('images/metro-icon-last.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-first-hover-metro
+{
+    background-image: url('images/metro-icon-first.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-last-hover-metro
+{
+    background-image: url('images/metro-icon-last.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-first-selected-metro
+{
+    background-image: url('images/metro-icon-first-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-last-selected-metro
+{
+    background-image: url('images/metro-icon-last-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-tree-grid-collapse-button-metro {
+    margin-top: 1px;
+}
+.ngx-icon-calendar-pressed-metro {
+    background-image: url('images/icon-calendar-white.png');
+}

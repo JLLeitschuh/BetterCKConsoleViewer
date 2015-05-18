@@ -1,0 +1,118 @@
+.ngx-widget-content-highcontrast{color: #000; border-color: #000; background-color: #fff;}
+.ngx-fill-state-normal-highcontrast {color: #000;background-color: #fff;}
+.ngx-widget-header-highcontrast{color: #fff; border-color:#000; background-color:#000}
+.ngx-fill-state-hover-highcontrast{border-color:#000; color: #fff; background-color:#000}
+.ngx-fill-state-pressed-highcontrast{border-color:#37006e; color: #fff; background-color:#37006e}
+.ngx-fill-state-focus-highcontrast { border-color: #37006e; }
+.ngx-scrollbar-state-normal-highcontrast, .ngx-grid-bottomright-highcontrast, .ngx-panel-bottomright-highcontrast, .ngx-listbox-bottomright-highcontrast{background-color:#000}
+.ngx-widget-highcontrast .ngx-grid-column-header-highcontrast, .ngx-grid-cell-highcontrast, .ngx-widget-highcontrast .ngx-grid-cell-highcontrast, .ngx-widget-highcontrast .ngx-grid-group-cell-highcontrast, .ngx-grid-group-cell-highcontrast{border-color:#000}
+.ngx-tabs-title-selected-bottom-highcontrast, .ngx-tabs-selection-tracker-bottom-highcontrast, .ngx-tabs-title-selected-top-highcontrast, .ngx-tabs-selection-tracker-top-highcontrast{color: #000; border-color:#000; border-bottom:1px solid #fff; background:#fff}
+.ngx-grid-cell-sort-alt-highcontrast, .ngx-grid-cell-filter-alt-highcontrast, .ngx-grid-cell-pinned-highcontrast, .ngx-grid-cell-alt-highcontrast, .ngx-grid-cell-sort-highcontrast{ background-color:#000; color: #fff;}
+.ngx-grid-cell-selected-highcontrast{ background-color:#37006e;  color:#fff}
+.ngx-grid-cell-hover-highcontrast{ background-color:#000; color: #fff;}
+.ngx-menu-vertical-highcontrast{background: #000; color: #fff;}
+.ngx-checkbox-hover-highcontrast {
+    background-color: #fff;
+}
+.ngx-radiobutton-hover-highcontrast {
+    background-color: #fff;
+}
+.ngx-scrollbar-thumb-state-hover-horizontal-highcontrast, .ngx-scrollbar-thumb-state-hover-highcontrast {
+    background: #fff;
+}
+.ngx-scrollbar-thumb-state-pressed-horizontal-highcontrast, .ngx-scrollbar-thumb-state-pressed-highcontrast {
+    background: #fff;
+}
+.ngx-icon-arrow-up-hover-highcontrast, .ngx-icon-arrow-up-selected-highcontrast
+{
+    background-image: url('images/icon-up-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-down-hover-highcontrast, .ngx-icon-arrow-down-selected-highcontrast
+
+{
+    background-image: url('images/icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-left-hover-highcontrast, .ngx-icon-arrow-left-selected-highcontrast
+{
+    background-image: url('images/icon-left-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-right-hover-highcontrast, .ngx-icon-arrow-right-selected-highcontrast
+{
+    background-image: url('images/icon-right-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-first-hover-highcontrast, .ngx-icon-arrow-last-selected-highcontrast
+{
+    background-image: url('images/icon-first-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-last-hover-highcontrast, .ngx-icon-arrow-last-selected-highcontrast
+{
+    background-image: url('images/icon-last-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-calendar-hover-highcontrast, .ngx-icon-calendar-pressed-highcontrast {
+    background-image: url('images/icon-calendar-white.png');
+}
+.ngx-grid-cell-highcontrast.ngx-grid-cell-selected-highcontrast>.ngx-grid-group-expand-highcontrast,
+.ngx-grid-cell-highcontrast.ngx-grid-cell-hover-highcontrast>.ngx-grid-group-expand-highcontrast {
+    background-image: url('images/icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-cell-highcontrast.ngx-grid-cell-selected-highcontrast>.ngx-grid-group-collapse-highcontrast,
+.ngx-grid-cell-highcontrast.ngx-grid-cell-hover-highcontrast>.ngx-grid-group-collapse-highcontrast {
+    background-image: url('images/icon-right-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-cell-highcontrast.ngx-grid-cell-selected-highcontrast>.ngx-grid-group-collapse-rtl-highcontrast,
+.ngx-grid-cell-highcontrast.ngx-grid-cell-hover-highcontrast>.ngx-grid-group-collapse-rtl-highcontrast {
+    background-image: url('images/icon-left-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-cell-highcontrast.ngx-grid-cell-selected-highcontrast>.ngx-grid-group-expand-rtl-highcontrast,
+.ngx-grid-cell-highcontrast.ngx-grid-cell-hover-highcontrast>.ngx-grid-group-expand-rtl-highcontrast {
+    background-image: url('images/icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-menu-item-arrow-right-hover-highcontrast, .ngx-menu-item-arrow-right-selected-highcontrast{background-image:url(images/icon-right-white.png); background-position:100% 50%; background-repeat:no-repeat}
+.ngx-menu-item-arrow-down-hover-highcontrast, .ngx-menu-item-arrow-down-selected-highcontrast{background-image:url(images/icon-down-white.png); background-position:100% 50%; background-repeat:no-repeat}
+.ngx-menu-item-arrow-up-hover-highcontrast, .ngx-menu-item-arrow-up-selected-highcontrast{background-image:url(images/icon-up-white.png);background-position:100% 50%; background-repeat:no-repeat}
+.ngx-menu-item-arrow-left-hover-highcontrast, .ngx-menu-item-arrow-left-selected-highcontrast{background-image:url(images/icon-left-white.png); background-position:0 50%; background-repeat:no-repeat}
+
+.ngx-icon-delete-highcontrast
+{
+    background-image: url('images/icon-delete-white.png');
+}
+.ngx-icon-edit-highcontrast
+{
+    background-image: url('images/icon-edit-white.png');
+}
+.ngx-icon-save-highcontrast
+{
+    background-image: url('images/icon-save-white.png');
+}
+.ngx-icon-cancel-highcontrast
+{
+    background-image: url('images/icon-cancel-white.png');
+}
+.ngx-icon-search-highcontrast
+{
+    background-image: url(images/search_white.png);
+}
+.ngx-icon-plus-highcontrast
+{
+    background-image: url(images/plus_white.png);
+}

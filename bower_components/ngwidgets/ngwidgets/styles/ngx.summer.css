@@ -1,0 +1,81 @@
+.ngx-widget-summer{border-color: #cacaca;}
+.ngx-fill-state-normal-summer, .ngx-widget-header-summer{ border-color: #cacaca; background-color:#e4e5e5;}
+.ngx-fill-state-hover-summer, .ngx-scrollbar-thumb-state-normal-summer, .ngx-scrollbar-thumb-state-normal-horizontal-summer{ border-color:#222;  background-color:#888888; color: #fff;}
+.ngx-fill-state-pressed-summer{border-color: #fe5815; background-color: #fe5815; color: #fff; }
+.ngx-fill-state-focus-summer { border-color: #555; }
+
+.ngx-scrollbar-state-normal-summer, .ngx-grid-bottomright-summer, .ngx-panel-bottomright-summer, .ngx-listbox-bottomright-summer{background-color: #e4e5e5;}
+.ngx-scrollbar-button-state-pressed, .ngx-scrollbar-button-state-hover{background-color: #e4e5e5; border-color: #222;}
+/*icons*/
+.ngx-menu-item-arrow-up-selected-summer, .ngx-icon-arrow-up-hover-summer, .ngx-icon-arrow-up-selected-summer{background-image:url('images/icon-up-white.png');background-repeat:no-repeat;background-position:center;}
+.ngx-menu-item-arrow-down-selected-summer, .ngx-icon-arrow-down-hover-summer, .ngx-icon-arrow-down-selected-summer{background-image:url('images/icon-down-white.png');background-repeat:no-repeat;background-position:center;}
+.ngx-menu-item-arrow-left-selected-summer, .ngx-icon-arrow-left-hover-summer, .ngx-icon-arrow-left-selected-summer{background-image:url('images/icon-left-white.png');background-repeat:no-repeat;background-position:center;}
+.ngx-menu-item-arrow-right-selected-summer, .ngx-icon-arrow-right-hover-summer, .ngx-icon-arrow-right-selected-summer{background-image:url('images/icon-right-white.png');background-repeat:no-repeat;background-position:center;}
+.ngx-tabs-close-button-hover-summer, .ngx-tabs-close-button-selected-summer{background-image:url(images/close_white.png);  background-repeat:no-repeat;  background-position:center;}
+.ngx-scrollbar-summer .ngx-icon-arrow-up-selected-summer, .ngx-scrollbar-summer .ngx-icon-arrow-up-hover-summer{background-image:url('images/icon-up.png'); background-repeat:no-repeat; background-position:center;}
+.ngx-scrollbar-summer .ngx-icon-arrow-down-selected-summer, .ngx-scrollbar-summer .ngx-icon-arrow-down-hover-summer{background-image:url('images/icon-down.png'); background-repeat:no-repeat; background-position:center;}
+.ngx-scrollbar-summer .ngx-icon-arrow-left-selected-summer, .ngx-scrollbar-summer .ngx-icon-arrow-left-hover-summer{background-image:url('images/icon-left.png'); background-repeat:no-repeat; background-position:center;}
+.ngx-scrollbar-summer .ngx-icon-arrow-right-selected-summer, .ngx-scrollbar-summer .ngx-icon-arrow-right-hover-summer{background-image:url('images/icon-right.png');background-repeat:no-repeat; background-position:center;}
+.ngx-grid-cell-summer.ngx-grid-cell-selected-summer>.ngx-grid-group-expand-summer,
+.ngx-grid-cell-summer.ngx-grid-cell-hover-summer>.ngx-grid-group-expand-summer {
+    background-image: url('images/icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-cell-summer.ngx-grid-cell-selected-summer>.ngx-grid-group-collapse-summer,
+.ngx-grid-cell-summer.ngx-grid-cell-hover-summer>.ngx-grid-group-collapse-summer {
+    background-image: url('images/icon-right-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-cell-summer.ngx-grid-cell-selected-summer>.ngx-grid-group-collapse-rtl-summer,
+.ngx-grid-cell-summer.ngx-grid-cell-hover-summer>.ngx-grid-group-collapse-rtl-summer {
+    background-image: url('images/icon-left-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-cell-summer.ngx-grid-cell-selected-summer>.ngx-grid-group-expand-rtl-summer,
+.ngx-grid-cell-summer.ngx-grid-cell-hover-summer>.ngx-grid-group-expand-rtl-summer {
+    background-image: url('images/icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-first-summer
+{
+    background-image: url('images/icon-first.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-last-summer
+{
+    background-image: url('images/icon-last.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-first-hover-summer
+{
+    background-image: url('images/icon-first-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-last-hover-summer
+{
+    background-image: url('images/icon-last-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-first-selected-summer
+{
+    background-image: url('images/icon-first-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-last-selected-summer
+{
+    background-image: url('images/icon-last-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-calendar-hover-summer, .ngx-icon-calendar-pressed-summer {
+    background-image: url('images/icon-calendar-white.png');
+}

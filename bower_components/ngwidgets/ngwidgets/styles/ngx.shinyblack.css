@@ -1,0 +1,144 @@
+.ngx-widget-shinyblack{border-color:#222}
+.ngx-widget-content-shinyblack{color:#222; border-color:#262626}
+.ngx-fill-state-normal-shinyblack, .ngx-widget-header-shinyblack{color:#fff; border-color:#000; background:#000 url(images/bg_black.png) left center scroll repeat-x}
+.ngx-fill-state-hover-shinyblack{background:transparent url(images/bg_blackhover.png) left center scroll repeat-x; border-color:#262626; color:#fff}
+.ngx-fill-state-pressed-shinyblack, .ngx-menu-item-top-hover-shinyblack{background:transparent url(images/bg_blackpressed.png) left center scroll repeat-x; border-color:#262626; color:#fff}
+
+.ngx-checkbox-check-checked-shinyblack{background:transparent url(images/check_white.png) left top no-repeat}
+.ngx-checkbox-check-indeterminate-shinyblack{background:transparent url(images/check_indeterminate_white.png) left top no-repeat}
+.ngx-grid-shinyblack, .ngx-grid-header-shinyblack, .ngx-grid-cell-shinyblack{border-color:#262626}
+.ngx-widget-shinyblack .ngx-grid-cell-shinyblack, .ngx-widget-shinyblack .ngx-grid-group-cell-shinyblack{border-color:#262626}
+.ngx-widget-shinyblack .ngx-grid-column-menubutton-shinyblack, .ngx-widget-shinyblack .ngx-grid-column-sortascbutton-shinyblack, .ngx-widget-shinyblack .ngx-grid-column-sortdescbutton-shinyblack, .ngx-widget-shinyblack .ngx-grid-column-filterbutton-shinyblack{border-color:#262626}
+.ngx-widget-shinyblack .ngx-grid-column-header-shinyblack{border-color:#262626}
+.ngx-grid-bottomright-shinyblack, .ngx-panel-bottomright-shinyblack, .ngx-listbox-bottomright-shinyblack{background-color:#262626}
+.ngx-widget-shinyblack .ngx-grid-column-menubutton-shinyblack, .ngx-menu-vertical-shinyblack{background-color:#262626; border-color:#262626}
+ .ngx-grid-selectionarea-shinyblack{background-color:#262626; border:1px solid #262626; opacity:0.5}
+.ngx-grid-group-cell-shinyblack{border-color:#262626; background-color:#fff}
+.ngx-grid-cell-sort-shinyblack, .ngx-grid-cell-filter-shinyblack, .ngx-grid-cell-pinned-shinyblack{ background-color:#eaf8ff}
+.ngx-grid-cell-alt-shinyblack, .ngx-grid-cell-sort-alt-shinyblack, .ngx-grid-cell-filter-alt-shinyblack{ background-color:#deedf5}
+.ngx-grid-cell-selected-shinyblack{background:#262626; color:#fff}
+.ngx-grid-cell-hover-shinyblack{background:#646464; color:#fff}
+.ngx-menu-vertical-shinyblack{background: #222; color:#fff;}
+.ngx-scrollbar-state-normal-shinyblack{background:#555; border:1px solid #555}
+.ngx-scrollbar-button-state-normal-shinyblack{border:1px solid #555; background:#555}
+.ngx-scrollbar-button-state-hover-shinyblack{background:#555 url(images/bg_blackhover.png) left top scroll repeat-x; border:1px solid #000}
+.ngx-scrollbar-button-state-pressed-shinyblack{background:#555 url(images/bg_blackpressed.png) left top scroll repeat-x; border:1px solid #000}
+.ngx-scrollbar-thumb-state-normal-horizontal-shinyblack{background:#555 url(images/bg_black.png) left top scroll repeat-x; border:1px solid #000}
+.ngx-scrollbar-thumb-state-hover-horizontal-shinyblack{ background:#555 url(images/bg_blackhover.png) left top scroll repeat-x; border:1px solid #000}
+.ngx-scrollbar-thumb-state-pressed-horizontal-shinyblack{background:#555 url(images/bg_blackpressed.png) left top scroll repeat-x; border:1px solid #000}
+.ngx-scrollbar-thumb-state-normal-shinyblack{background:#555 url(images/bg_black_horizontal.png) left top scroll repeat-x; border:1px solid #000}
+.ngx-scrollbar-thumb-state-hover-shinyblack{background:#555 url(images/bg_blackhover_horizontal.png) left top scroll repeat-x; border:1px solid #000}
+.ngx-scrollbar-thumb-state-pressed-shinyblack{background:#555 url(images/bg_blackpressed_horizontal.png) left top scroll repeat-x; border:1px solid #000}
+.ngx-splitter-splitbar-horizontal-shinyblack, .ngx-splitter-splitbar-vertical-shinyblack, .ngx-splitter-splitbar-hover-shinyblack, .ngx-splitter-splitbar-hover-horizontal-shinyblack{background: #555;}
+.ngx-splitter-collapse-button-horizontal-shinyblack, .ngx-splitter-collapse-button-vertical-shinyblack{background: #7f7f7f;}
+.ngx-grid-column-sortascbutton-shinyblack, .ngx-expander-arrow-bottom-shinyblack, .ngx-window-collapse-button-shinyblack, .ngx-menu-item-arrow-up-shinyblack, .ngx-menu-item-arrow-up-selected-shinyblack, .ngx-menu-item-arrow-top-up-shinyblack, .ngx-icon-arrow-up-shinyblack, .ngx-icon-arrow-up-hover-shinyblack, .ngx-icon-arrow-up-selected-shinyblack{background-image:url('images/icon-up-white.png'); background-repeat:no-repeat; background-position:center}
+.ngx-grid-column-menubutton-shinyblack, .ngx-grid-column-sortdescbutton-shinyblack, .ngx-expander-arrow-top-shinyblack, .ngx-window-collapse-button-collapsed-shinyblack, .ngx-menu-item-arrow-down-shinyblack, .ngx-menu-item-arrow-down-selected-shinyblack, .ngx-menu-item-arrow-down-shinyblack, .ngx-icon-arrow-down-shinyblack, .ngx-icon-arrow-down-hover-shinyblack, .ngx-icon-arrow-down-selected-shinyblack{background-image:url('images/icon-down-white.png'); background-repeat:no-repeat; background-position:center}
+
+.ngx-icon-arrow-left-shinyblack{background-image:url('images/icon-left-white.png'); background-repeat:no-repeat; background-position:center}
+.ngx-icon-arrow-right-shinyblack{background-image:url('images/icon-right-white.png'); background-repeat:no-repeat; background-position:center}
+.ngx-menu-item-arrow-left-shinyblack{background-image:url('images/icon-left.png'); background-repeat:no-repeat; background-position:center}
+.ngx-menu-item-arrow-right-shinyblack{background-image:url('images/icon-right.png'); background-repeat:no-repeat; background-position:center}
+
+.ngx-tabs-arrow-left-shinyblack, .ngx-menu-item-arrow-left-selected-shinyblack, .ngx-menu-item-arrow-top-left, .ngx-icon-arrow-down-left-shinyblack, .ngx-icon-arrow-left-selected-shinyblack{background-image:url('images/icon-left-white.png'); background-repeat:no-repeat; background-position:center}
+.ngx-tabs-arrow-right-shinyblack, .ngx-menu-item-arrow-right-selected-shinyblack, .ngx-menu-item-arrow-top-right-shinyblack, .ngx-icon-arrow-right-hover-shinyblack, .ngx-icon-arrow-right-selected-shinyblack{background-image:url('images/icon-right-white.png'); background-repeat:no-repeat; background-position:center}
+.ngx-window-close-button-shinyblack, .ngx-icon-close-shinyblack, .ngx-tabs-close-button-shinyblack, .ngx-tabs-close-button-hover-shinyblack, .ngx-tabs-close-button-selected-shinyblack{background-image:url(images/close_white.png);  background-repeat:no-repeat;  background-position:center}
+/*applied to the progressbar's value element*/
+.ngx-progressbar-value-shinyblack{background: #555;}
+.ngx-progressbar-value-vertical-shinyblack{background: #555;}
+.ngx-icon-arrow-first-shinyblack
+{
+    background-image: url('images/icon-first-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-last-shinyblack
+{
+    background-image: url('images/icon-last-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-grid-group-expand-shinyblack, .ngx-grid-cell-shinyblack>.ngx-grid-group-expand-shinyblack, .ngx-tree-item-arrow-expand-shinyblack {
+    background-image: url('images/icon-down.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-group-collapse-shinyblack, .ngx-grid-cell-shinyblack>.ngx-grid-group-collapse-shinyblack, .ngx-tree-item-arrow-collapse-shinyblack {
+    background-image: url('images/icon-right.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-group-collapse-rtl-shinyblack, .ngx-grid-cell-shinyblack>.ngx-grid-group-collapse-rtl-shinyblack, .ngx-tree-item-arrow-collapse-rtl-shinyblack {
+    background-image: url('images/icon-left.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-group-expand-rtl-shinyblack, .ngx-grid-cell-shinyblack>.ngx-grid-group-expand-rtl-shinyblack {
+    background-image: url('images/icon-down.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-grid-cell-shinyblack.ngx-grid-cell-selected-shinyblack>.ngx-grid-group-expand-shinyblack,
+.ngx-grid-cell-shinyblack.ngx-grid-cell-hover-shinyblack>.ngx-grid-group-expand-shinyblack {
+    background-image: url('images/icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-cell-shinyblack.ngx-grid-cell-selected-shinyblack>.ngx-grid-group-collapse-shinyblack,
+.ngx-grid-cell-shinyblack.ngx-grid-cell-hover-shinyblack>.ngx-grid-group-collapse-shinyblack {
+    background-image: url('images/icon-right-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-cell-shinyblack.ngx-grid-cell-selected-shinyblack>.ngx-grid-group-collapse-rtl-shinyblack,
+.ngx-grid-cell-shinyblack.ngx-grid-cell-hover-shinyblack>.ngx-grid-group-collapse-rtl-shinyblack {
+    background-image: url('images/icon-left-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-cell-shinyblack.ngx-grid-cell-selected-shinyblack>.ngx-grid-group-expand-rtl-shinyblack,
+.ngx-grid-cell-shinyblack.ngx-grid-cell-hover-shinyblack>.ngx-grid-group-expand-rtl-shinyblack {
+    background-image: url('images/icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-search-shinyblack
+{
+    background-image: url(images/search_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-calendar-shinyblack, .ngx-icon-calendar-hover-shinyblack, .ngx-icon-calendar-pressed-shinyblack {
+    background-image: url('images/icon-calendar-white.png');
+}
+.ngx-icon-delete-shinyblack
+{
+    background-image: url('images/icon-delete-white.png');
+}
+.ngx-icon-edit-shinyblack
+{
+    background-image: url('images/icon-edit-white.png');
+}
+.ngx-icon-save-shinyblack
+{
+    background-image: url('images/icon-save-white.png');
+}
+.ngx-icon-cancel-shinyblack
+{
+    background-image: url('images/icon-cancel-white.png');
+}
+.ngx-icon-search-shinyblack
+{
+    background-image: url(images/search_white.png);
+}
+.ngx-icon-plus-shinyblack
+{
+    background-image: url(images/plus_white.png);
+}
+.ngx-menu-minimized-button-shinyblack {
+   background-image: url('images/icon-menu-minimized-white.png');
+}
+.ngx-editor-toolbar-icon-shinyblack {
+    background: url('images/html_editor_white.png') no-repeat;
+}

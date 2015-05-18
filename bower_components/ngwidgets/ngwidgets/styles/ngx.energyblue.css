@@ -1,0 +1,12 @@
+.ngx-widget-content-energyblue{border-color: #a4bed4;}
+.ngx-fill-state-normal-energyblue, .ngx-widget-header-energyblue{border-color:#a4bed4; background-color:#e0e9f5}
+.ngx-fill-state-hover-energyblue{border-color:#a4bed4;  background-color:#cfdde9}
+.ngx-fill-state-pressed-energyblue{border-color:#5e8cb3; background-color:#cfdde9}
+.ngx-fill-state-focus-energyblue { border-color: #477396; }
+.ngx-scrollbar-state-normal-energyblue, .ngx-grid-bottomright-energyblue, .ngx-panel-bottomright-energyblue, .ngx-listbox-bottomright-energyblue{background-color:#e0e9f5}
+.ngx-widget-energyblue .ngx-grid-column-header-energyblue, .ngx-grid-cell-energyblue, .ngx-widget-energyblue .ngx-grid-cell-energyblue, .ngx-widget-energyblue .ngx-grid-group-cell-energyblue, .ngx-grid-group-cell-energyblue{border-color:#a4bed4}
+.ngx-tabs-title-selected-bottom-energyblue, .ngx-tabs-selection-tracker-bottom-energyblue, .ngx-tabs-title-selected-top-energyblue, .ngx-tabs-selection-tracker-top-energyblue{border-color:#a4bed4; border-bottom:1px solid #fff; background:#fff}
+.ngx-grid-cell-sort-alt-energyblue, .ngx-grid-cell-filter-alt-energyblue, .ngx-grid-cell-pinned-energyblue, .ngx-grid-cell-alt-energyblue, .ngx-grid-cell-sort-energyblue{ background-color:#e7eef8}
+.ngx-grid-cell-selected-energyblue{ background-color:#cfdde9 !important;  color:#2b465e !important;}
+.ngx-grid-cell-hover-energyblue{ background-color:#cfdde9 !important;}
+.ngx-menu-vertical-energyblue{background: #e0e9f5;}

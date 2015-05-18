@@ -1,0 +1,258 @@
+.ngx-rc-tl-office
+{
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.ngx-rc-tr-office
+{
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.ngx-rc-bl-office
+{
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.ngx-rc-br-office
+{
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+/*top rounded Corners*/
+.ngx-rc-t-office
+{
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+/*bottom rounded Corners*/
+.ngx-rc-b-office
+{
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+/*right rounded Corners*/
+.ngx-rc-r-office
+{
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+/*left rounded Corners*/
+.ngx-rc-l-office
+{
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+/*all rounded Corners*/
+.ngx-rc-all-office
+{
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+.ngx-widget-office {
+    font-family: Calibri;
+}
+.ngx-widget-content-office{font-family: Calibri; border-color: #d4d4d4; color: #444444; background-color: #fff;}
+.ngx-widget-header-office{font-family: Calibri; color: #444444; border-color:#d4d4d4; background-color:#ffffff;}
+
+.ngx-fill-state-normal-office{font-family: Calibri; border-color: #d4d4d4; color: #444444; background: #fdfdfd;}
+.ngx-grid-cell-sort-alt-office, .ngx-grid-cell-filter-alt-office, .ngx-grid-cell-pinned-office, .ngx-grid-cell-alt-office, .ngx-grid-cell-sort-office{ background:#ededed; color: #000;}
+.ngx-button-office {border-color: #d4d4d4;}
+.ngx-fill-state-hover-office{border-color:#86bfa0; color: #000; background:#d3f0e0;}
+.ngx-input-office, .ngx-input-button-content-office {border-color: #d4d4d4;}
+.ngx-fill-state-focus-office, .ngx-combobox-content-focus-office, .ngx-numberinput-focus, .ngx-datetimeinput-office .ngx-fill-state-hover-office, .ngx-datetimeinput-office .ngx-fill-state-pressed-office{ border-color: #86bfa0; }
+.ngx-fill-state-pressed-office{border-color:#429366; color: #000; background:#86bfa0;}
+
+.ngx-scrollbar-state-normal-office, .ngx-grid-bottomright-office, .ngx-panel-bottomright-office, .ngx-listbox-bottomright-office{background:#f3f3f3;}
+.ngx-widget-office .ngx-grid-column-header-office, .ngx-grid-cell-office, .ngx-widget-office .ngx-grid-cell-office, .ngx-widget-office .ngx-grid-group-cell-office, .ngx-grid-group-cell-office{font-family: Calibri; border-color:#f3f3f3;}
+.ngx-tabs-title-bottom-office, .ngx-tabs-title-office{color: #666666;}
+.ngx-tabs-title-hover-bottom-office, .ngx-tabs-title-hover-top-office{color: #217346; background: transparent; border-color: transparent;}
+.ngx-tabs-title-selected-bottom-office, .ngx-tabs-selection-tracker-bottom-office, .ngx-tabs-title-selected-top-office, .ngx-tabs-selection-tracker-top-office{font-weight: bold; color: #217346; border-color:#d4d4d4; border-bottom:1px solid #fff; background:#fff}
+.ngx-menu-vertical-office{background: #fff; border-color: #d4d4d4;}
+.ngx-widget-office .ngx-grid-cell-office, .ngx-widget-office .ngx-grid-column-header-office, .ngx-widget-office .ngx-grid-group-cell-office {color: #000; border-color: #d4d4d4;}
+.ngx-widget-office .ngx-grid-column-menubutton-office, .ngx-widget-office .ngx-grid-column-sortascbutton-office, .ngx-widget-office .ngx-grid-column-sortdescbutton-office, .ngx-widget-office .ngx-grid-column-filterbutton-office {
+    background-color: transparent;
+    border-color: #d4d4d4;
+}
+ .ngx-input-button-header-office, .ngx-calendar-title-header-office, .ngx-grid-office .ngx-widget-header-office, .ngx-grid-header-office, .ngx-grid-column-header-office, .ngx-grid-office {font-family: Calibri; border-color: #d4d4d4; color: #444444; background: #fff;}
+.ngx-window-header-office{font-family: Calibri; color: #444444; background: #fff;}
+.ngx-grid-column-menubutton-office {
+    background-image: url('images/office-icon-down.png');
+ }
+ /*applied to the column's sort button when the sort order is ascending.*/
+ .ngx-grid-column-sortascbutton-office {
+    background-image: url('images/office-icon-up.png');
+ }
+.ngx-grid-column-sortdescbutton-office {
+    background-image: url('images/office-icon-down.png');
+}
+.ngx-checkbox-hover-office {
+    background: #fff;
+}
+.ngx-radiobutton-hover-office {
+    background: #fff;
+}
+.ngx-scrollbar-thumb-state-normal-horizontal-office, .ngx-scrollbar-thumb-state-normal-office {
+    background: #ffffff; border-color: #d4d4d4;
+}
+.ngx-scrollbar-thumb-state-hover-horizontal-office, .ngx-scrollbar-thumb-state-hover-office {
+    background: #f0f0f0; border-color: #d4d4d4;
+}
+.ngx-scrollbar-thumb-state-pressed-horizontal-office, .ngx-scrollbar-thumb-state-pressed-office {
+    background: #f0f0f0; border-color: #777777;
+}
+.ngx-scrollbar-button-state-normal-office
+{
+    border: 1px solid #d4d4d4; 
+    background: #fff;
+}
+/*applied to the scrollbar buttons in hovered state.*/
+.ngx-scrollbar-button-state-hover-office
+{
+    border: 1px solid #777777;
+    background: #fff;
+}
+/*applied to the scrollbar buttons in pressed state.*/
+.ngx-scrollbar-button-state-pressed-office
+{
+    border: 1px solid #777777;
+    background: #f0f0f0;
+}
+
+/*icons*/
+.ngx-window-collapse-button-office
+{
+    background-image: url(images/office-icon-up.png);
+    background-repeat: no-repeat;
+}
+.ngx-window-collapse-button-collapsed-office {
+    background-image: url(images/office-icon-down.png);
+    background-repeat: no-repeat;
+}
+.ngx-icon-arrow-up-office, .ngx-expander-arrow-bottom-office, .ngx-menu-item-arrow-up-office
+{
+    background-image: url('images/office-icon-up.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-down-office, .ngx-expander-arrow-top-office, .ngx-tree-item-arrow-expand-office, .ngx-tree-item-arrow-expand-hover-office, .ngx-menu-item-arrow-down-office
+{
+    background-image: url('images/office-icon-down.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-left-office, .ngx-menu-item-arrow-left-office
+{
+    background-image: url('images/office-icon-left.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-right-office, .ngx-menu-item-arrow-right-office, .ngx-tree-item-arrow-collapse-office, .ngx-tree-item-arrow-collapse-hover-office
+{
+    background-image: url('images/office-icon-right.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-tabs-arrow-left-office, .ngx-tree-item-arrow-collapse-rtl-office, .ngx-tree-item-arrow-collapse-hover-rtl-office
+{
+    background-image: url('images/office-icon-left.png');
+    background-repeat: no-repeat;
+}
+.ngx-tabs-arrow-right-office
+{
+    background-image: url('images/office-icon-right.png');
+    background-repeat: no-repeat;
+}
+
+.ngx-menu-item-arrow-up-selected-office, .ngx-icon-arrow-up-selected-office{background-image:url('images/office-icon-up.png');background-repeat:no-repeat;background-position:center;}
+.ngx-menu-item-arrow-down-selected-office, .ngx-icon-arrow-down-selected-office{background-image:url('images/office-icon-down.png');background-repeat:no-repeat;background-position:center;}
+.ngx-menu-item-arrow-left-selected-office, .ngx-icon-arrow-left-selected-office{background-image:url('images/office-icon-left.png');background-repeat:no-repeat;background-position:center;}
+.ngx-menu-item-arrow-right-selected-office, .ngx-icon-arrow-right-selected-office{background-image:url('images/office-icon-right.png');background-repeat:no-repeat;background-position:center;}
+.ngx-tabs-close-button-office{background-image:url(images/close.png);  background-repeat:no-repeat;  background-position:center;}
+.ngx-tabs-close-button-selected-office{background-image:url(images/close.png);  background-repeat:no-repeat;  background-position:center;}
+.ngx-tabs-close-button-hover-office{background-image:url(images/close.png);  background-repeat:no-repeat;  background-position:center;}
+.ngx-expander-arrow-bottom-office,.ngx-scrollbar-office .ngx-icon-arrow-up-selected-office{background-image:url('images/office-icon-up.png'); background-repeat:no-repeat; background-position:center;}
+.ngx-expander-arrow-top-office, .ngx-scrollbar-office .ngx-icon-arrow-down-selected-office{background-image:url('images/office-icon-down.png'); background-repeat:no-repeat; background-position:center;}
+.ngx-scrollbar-office .ngx-icon-arrow-left-selected-office{background-image:url('images/office-icon-left.png'); background-repeat:no-repeat; background-position:center;}
+.ngx-scrollbar-office .ngx-icon-arrow-right-selected-office{background-image:url('images/office-icon-right.png');background-repeat:no-repeat; background-position:center;}
+.ngx-slider-slider-office
+{
+}
+.ngx-slider-button-office
+{
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+}
+.ngx-input-button-content-office
+{  
+    font-size: 10px;
+}
+
+.ngx-dropdownlist-state-normal-office, .ngx-dropdownlist-state-hover-office, .ngx-dropdownlist-state-selected-office,
+.ngx-scrollbar-button-state-hover-office, .ngx-scrollbar-button-state-normal-office, .ngx-scrollbar-button-state-pressed-office,
+.ngx-scrollbar-thumb-state-normal-horizontal-office, .ngx-scrollbar-thumb-state-hover-horizontal-office, .ngx-scrollbar-thumb-state-pressed-horizontal-office,
+.ngx-scrollbar-thumb-state-normal-office, .ngx-scrollbar-thumb-state-pressed-office, .ngx-button-office, .ngx-tree-item-hover-office, .ngx-tree-item-selected-office,
+.ngx-tree-item-office, .ngx-menu-item-office, .ngx-menu-item-hover-office, .ngx-menu-item-selected-office, .ngx-menu-item-top-office, .ngx-menu-item-top-hover-office, 
+.ngx-menu-item-top-selected-office, .ngx-slider-button-office, .ngx-slider-slider-office
+ {
+    -webkit-transition: background-color 100ms linear;
+     -moz-transition: background-color 100ms linear;
+     -o-transition: background-color 100ms linear;
+     -ms-transition: background-color 100ms linear;
+     transition: background-color 100ms linear;
+}
+.ngx-switchbutton-office {
+    -moz-border-radius: 0px; 
+    -webkit-border-radius: 0px; 
+    border-radius: 0px;
+    border: 2px solid #a6a6a6;
+}
+.ngx-switchbutton-thumb-office {
+    width: 12px;
+    background: #000;
+    border: 1px solid #000;
+}
+.ngx-switchbutton-label-on-office {
+    background: #429366;
+    color: #429366;
+}
+.ngx-switchbutton-label-off-office {
+    background: #a6a6a6;
+    color: #a6a6a6;
+}
+.ngx-icon-arrow-first-metro
+{
+    background-image: url('images/office-icon-first.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-last-metro
+{
+    background-image: url('images/office-icon-last.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-switchbutton-wrapper-office {
+}

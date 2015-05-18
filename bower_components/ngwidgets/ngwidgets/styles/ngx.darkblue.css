@@ -1,0 +1,130 @@
+/*states, content and header*/
+.ngx-widget-darkblue{border-color:#004a73}
+.ngx-widget-content-darkblue{color:#004a73; border-color:#004a73}
+.ngx-fill-state-normal-darkblue, .ngx-widget-header-darkblue, .ngx-menu-vertical-darkblue{color: #fff; border-color: #004a73; background-color:#449bca; background-image:-webkit-gradient(linear,0 0,0 100%,from(#3c91c2),to(#449bca));  background-image:-moz-linear-gradient(top,#3c91c2,#449bca);  background-image:-o-linear-gradient(top,#3c91c2,#449bca)}
+.ngx-grid-cell-sort-darkblue, .ngx-grid-cell-filter-darkblue, .ngx-grid-cell-pinned-darkblue{color: #000; background-color:#deedf5}
+.ngx-grid-cell-alt-darkblue, .ngx-grid-cell-sort-alt-darkblue, .ngx-grid-cell-filter-alt-darkblue{color: #000; background-color:#deedf5}
+.ngx-checkbox-check-checked-darkblue{background:transparent url(images/check_white.png) left top no-repeat}
+.ngx-checkbox-check-indeterminate-darkblue{background:transparent url(images/check_indeterminate_white.png) left top no-repeat}
+.ngx-grid-darkblue, .ngx-grid-header-darkblue, .ngx-grid-cell-darkblue{border-color:#60aad2}
+.ngx-widget-darkblue .ngx-grid-cell-darkblue, .ngx-widget-darkblue .ngx-grid-group-cell-darkblue{border-color:#60aad2}
+.ngx-widget-darkblue .ngx-grid-column-menubutton-darkblue, .ngx-widget-darkblue .ngx-grid-column-sortascbutton-darkblue, .ngx-widget-darkblue .ngx-grid-column-sortdescbutton-darkblue, .ngx-widget-darkblue .ngx-grid-column-filterbutton-darkblue{   background-color:#449bca;border-color:#449bca}
+.ngx-widget-darkblue .ngx-grid-column-header-darkblue{border-color:#449bca}
+.ngx-grid-bottomright-darkblue, .ngx-panel-bottomright-darkblue, .ngx-listbox-bottomright-darkblue{   background-color:#449bca}
+.ngx-widget-darkblue .ngx-grid-column-menubutton-darkblue, .ngx-menu-vertical-darkblue{background-color:#0a73a7;border-color:#0a73a7}
+.ngx-grid-group-cell-darkblue{border-color:#60aad2; background-color:#fff}
+.ngx-fill-state-hover-darkblue{background: #2f7097; background-image: none; border-color:#004a73; color:#fff}
+.ngx-fill-state-pressed-darkblue, .ngx-menu-item-top-hover-darkblue{background: #004a73; background-image: none; border-color:#004a73; color:#fff}
+ .ngx-grid-selectionarea-darkblue{background-color:#60aad2;border:1px solid #60aad2; opacity:0.5}
+.ngx-scrollbar-state-normal-darkblue{background-color:#449bca; border:1px solid #449bca;}
+.ngx-tabs-title-selected-bottom-darkblue, .ngx-tabs-selection-tracker-bottom-darkblue, .ngx-tabs-title-selected-top-darkblue, .ngx-tabs-selection-tracker-top-darkblue{color: #ffffff; border-color:#004a73; border-bottom:1px solid #004a73; background:#004a73}
+
+/*icons*/
+.ngx-grid-column-sortascbutton-darkblue, .ngx-expander-arrow-bottom-darkblue, .ngx-window-collapse-button-darkblue, .ngx-menu-item-arrow-up-darkblue, .ngx-menu-item-arrow-up-selected-darkblue, .ngx-menu-item-arrow-top-up-darkblue, .ngx-icon-arrow-up-darkblue, .ngx-icon-arrow-up-hover-darkblue, .ngx-icon-arrow-up-selected-darkblue{background-image:url('images/icon-up-white.png');background-repeat:no-repeat;background-position:center}
+.ngx-grid-column-menubutton-darkblue, .ngx-grid-column-sortdescbutton-darkblue, .ngx-expander-arrow-top-darkblue, .ngx-window-collapse-button-collapsed-darkblue, .ngx-menu-item-arrow-down-darkblue, .ngx-menu-item-arrow-down-selected-darkblue, .ngx-menu-item-arrow-down-darkblue, .ngx-icon-arrow-down-darkblue, .ngx-icon-arrow-down-hover-darkblue, .ngx-icon-arrow-down-selected-darkblue{background-image:url('images/icon-down-white.png');background-repeat:no-repeat;background-position:center}
+
+.ngx-icon-arrow-left-darkblue{background-image:url('images/icon-left-white.png'); background-repeat:no-repeat; background-position:center}
+.ngx-icon-arrow-right-darkblue{background-image:url('images/icon-right-white.png'); background-repeat:no-repeat; background-position:center}
+.ngx-menu-item-arrow-left-darkblue{background-image:url('images/icon-left.png'); background-repeat:no-repeat; background-position:center}
+.ngx-menu-item-arrow-right-darkblue{background-image:url('images/icon-right.png'); background-repeat:no-repeat; background-position:center}
+
+.ngx-tabs-arrow-left-darkblue, .ngx-menu-item-arrow-left-selected-darkblue, .ngx-menu-item-arrow-top-left-darkblue, .ngx-icon-arrow-down-left-darkblue, .ngx-icon-arrow-left-selected-darkblue{background-image:url('images/icon-left-white.png');background-repeat:no-repeat;background-position:center}
+.ngx-tabs-arrow-right-darkblue, .ngx-menu-item-arrow-right-selected-darkblue, .ngx-menu-item-arrow-top-right-darkblue, .ngx-icon-arrow-right-hover-darkblue, .ngx-icon-arrow-right-selected-darkblue{background-image:url('images/icon-right-white.png');background-repeat:no-repeat;background-position:center}
+.ngx-window-close-button-darkblue, .ngx-icon-close-darkblue, .ngx-tabs-close-button-darkblue, .ngx-tabs-close-button-hover-darkblue, .ngx-tabs-close-button-selected-darkblue{background-image:url(images/close_white.png);  background-repeat:no-repeat;  background-position:center}
+.ngx-icon-arrow-first-darkblue
+{
+    background-image: url('images/icon-first-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-last-darkblue
+{
+    background-image: url('images/icon-last-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-search-darkblue
+{
+    background-image: url(images/search_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-calendar-darkblue, .ngx-icon-calendar-hover-darkblue, .ngx-icon-calendar-pressed-darkblue {
+    background-image: url('images/icon-calendar-white.png');
+}
+.ngx-icon-delete-darkblue
+{
+    background-image: url('images/icon-delete-white.png');
+}
+.ngx-icon-edit-darkblue
+{
+    background-image: url('images/icon-edit-white.png');
+}
+.ngx-icon-save-darkblue
+{
+    background-image: url('images/icon-save-white.png');
+}
+.ngx-icon-cancel-darkblue
+{
+    background-image: url('images/icon-cancel-white.png');
+}
+.ngx-icon-search-darkblue
+{
+    background-image: url(images/search_white.png);
+}
+.ngx-icon-plus-darkblue
+{
+    background-image: url(images/plus_white.png);
+}
+
+.ngx-grid-group-expand-darkblue, .ngx-grid-cell-darkblue>.ngx-grid-group-expand-darkblue, .ngx-tree-item-arrow-expand-darkblue {
+    background-image: url('images/icon-down.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-group-collapse-darkblue, .ngx-grid-cell-darkblue>.ngx-grid-group-collapse-darkblue, .ngx-tree-item-arrow-collapse-darkblue {
+    background-image: url('images/icon-right.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-group-collapse-rtl-darkblue, .ngx-grid-cell-darkblue>.ngx-grid-group-collapse-rtl-darkblue, .ngx-tree-item-arrow-collapse-rtl-darkblue {
+    background-image: url('images/icon-left.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-group-expand-rtl-darkblue, .ngx-grid-cell-darkblue>.ngx-grid-group-expand-rtl-darkblue {
+    background-image: url('images/icon-down.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-grid-cell-darkblue.ngx-grid-cell-selected-darkblue>.ngx-grid-group-expand-darkblue,
+.ngx-grid-cell-darkblue.ngx-grid-cell-hover-darkblue>.ngx-grid-group-expand-darkblue {
+    background-image: url('images/icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-cell-darkblue.ngx-grid-cell-selected-darkblue>.ngx-grid-group-collapse-darkblue,
+.ngx-grid-cell-darkblue.ngx-grid-cell-hover-darkblue>.ngx-grid-group-collapse-darkblue {
+    background-image: url('images/icon-right-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-cell-darkblue.ngx-grid-cell-selected-darkblue>.ngx-grid-group-collapse-rtl-darkblue,
+.ngx-grid-cell-darkblue.ngx-grid-cell-hover-darkblue>.ngx-grid-group-collapse-rtl-darkblue {
+    background-image: url('images/icon-left-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-cell-darkblue.ngx-grid-cell-selected-darkblue>.ngx-grid-group-expand-rtl-darkblue,
+.ngx-grid-cell-darkblue.ngx-grid-cell-hover-darkblue>.ngx-grid-group-expand-rtl-darkblue {
+    background-image: url('images/icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-menu-minimized-button-darkblue {
+   background-image: url('images/icon-menu-minimized-white.png');
+}
+.ngx-editor-toolbar-icon-darkblue {
+    background: url('images/html_editor_white.png') no-repeat;
+}

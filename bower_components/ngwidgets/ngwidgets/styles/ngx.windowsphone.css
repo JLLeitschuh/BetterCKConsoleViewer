@@ -1,0 +1,475 @@
+.ngx-rc-tl-windowsphone
+{
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.ngx-rc-tr-windowsphone
+{
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.ngx-rc-bl-windowsphone
+{
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.ngx-rc-br-windowsphone
+{
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+/*top rounded Corners*/
+.ngx-rc-t-windowsphone
+{
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+/*bottom rounded Corners*/
+.ngx-rc-b-windowsphone
+{
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+/*right rounded Corners*/
+.ngx-rc-r-windowsphone
+{
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+/*left rounded Corners*/
+.ngx-rc-l-windowsphone
+{
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+/*all rounded Corners*/
+.ngx-rc-all-windowsphone
+{
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+.ngx-widget-windowsphone {
+    font-size: 16px; 
+    font-family: 'Segoe WP', 'segoe ui', arial, sans-serif;
+    color: inherit;
+}
+.ngx-widget-content-windowsphone{font-size: 16px; font-family: 'Segoe WP', 'segoe ui', arial, sans-serif; border-color: #2F2F2F; color: #ffffff; background-color: #000;}
+input[type=text].ngx-input-windowsphone, input[type=password].ngx-input-windowsphone{
+   font-size: 16px; 
+   font-family: 'Segoe WP', 'segoe ui', arial, sans-serif;
+   background: #BEBEBE;
+   border-color: #D2D2D2;
+   color: #000;
+ }
+.ngx-widget-header-windowsphone{font-size: 16px;  font-family: 'Segoe WP', 'segoe ui', arial, sans-serif; color: #ffffff; border-color:#35353A; background-color:#3E3E42;}
+.ngx-fill-state-normal-windowsphone, .ngx-fill-state-hover-windowsphone{font-size: 16px; font-family: 'Segoe WP', 'segoe ui', arial, sans-serif; border-color: #35353A; color: #ffffff; background: #3E3E42;}
+.ngx-combobox-arrow-normal-windowsphone {
+  background: #BEBEBE;
+  border-color: #BEBEBE;
+}
+.ngx-dropdownlist-state-normal-windowsphone {
+   background: #BEBEBE;
+   border-color: #D2D2D2;
+   color: #000;
+}
+.ngx-listbox-windowsphone, .ngx-listmenu-windowsphone, .ngx-listmenu-item-windowsphone, .ngx-calendar-windowsphone .ngx-widget-content-windowsphone {
+    background: #000;
+}
+
+.ngx-fill-state-focus-windowsphone { border-color: #2F2F2F; }
+.ngx-button-windowsphone {
+   padding: 10px 7px;
+   border: 2px solid #fff; 
+   background-color: #000;
+}
+.ngx-buttongroup-windowsphone .ngx-button-windowsphone {
+   border: 1px solid #fff; 
+}
+.ngx-listmenu-header-windowsphone .ngx-button-windowsphone, .ngx-grid-pager-windowsphone .ngx-button-windowsphone {
+    background-color:#3E3E42;
+    border: 1px solid #35353A;
+}
+.ngx-fill-state-pressed-windowsphone{border-color:#008a00; color: #fff; background-color:#008a00;}
+.ngx-listmenu-header-windowsphone .ngx-button-windowsphone.ngx-fill-state-pressed-windowsphone {
+border-color:#008a00; color: #fff; background-color:#008a00;
+}
+
+.ngx-fill-state-disabled-windowsphone {
+    color: #898989;
+}
+.ngx-combobox-windowsphone {
+   border-color: #D2D2D2;
+ }
+.ngx-input-windowsphone, .ngx-datetimeinput-content-windowsphone, .ngx-input-content-windowsphone, .ngx-combobox-content-windowsphone, .ngx-combobox-input-windowsphone{
+   font-size: 16px; 
+   font-family: 'Segoe WP', 'segoe ui', arial, sans-serif;
+   background: #BEBEBE;
+   border-color: #D2D2D2;
+   color: #000;
+}
+.ngx-combobox-content-windowsphone {
+    border-right-color: #BEBEBE;
+}
+.ngx-combobox-content-rtl-windowsphone {
+    border-left-color: #BEBEBE;
+}
+
+.ngx-dropdownlist-state-normal-windowsphone .ngx-icon-arrow-down-windowsphone {
+    background-image: url('images/metro-icon-down.png');
+}
+.ngx-dropdownlist-state-selected-windowsphone .ngx-icon-arrow-down-windowsphone {
+    background-image: url('images/metro-icon-down-white.png');
+}
+.ngx-combobox-state-focus-windowsphone .ngx-combobox-arrow-normal-windowsphone .ngx-icon-arrow-down-windowsphone {
+    background-image: url('images/metro-icon-down-white.png');
+}
+.ngx-combobox-state-focus-windowsphone, .ngx-combobox-state-focus-windowsphone .ngx-combobox-content-windowsphone, .ngx-combobox-state-focus-windowsphone .ngx-combobox-input-windowsphone,
+.ngx-combobox-state-focus-windowsphone .ngx-combobox-arrow-normal-windowsphone
+{
+    background-color:#008a00;
+    border-color: #008a00;
+    color: #fff;
+}
+.ngx-combobox-multi-item-windowsphone {
+    background-color:#008a00;
+    padding: 7px;
+    border-color: #008a00;
+}
+.ngx-combobox-multi-item-windowsphone a:link {
+    margin-top: -2px;
+}
+.ngx-numberinput-windowsphone {
+    border-color: #000;
+}
+.ngx-scrollbar-state-normal-windowsphone, .ngx-grid-bottomright-windowsphone, .ngx-panel-bottomright-windowsphone, .ngx-listbox-bottomright-windowsphone{background-color:#3E3E42;}
+.ngx-widget-windowsphone .ngx-grid-column-header-windowsphone, .ngx-grid-cell-windowsphone, .ngx-widget-windowsphone .ngx-grid-cell-windowsphone, .ngx-widget-windowsphone .ngx-grid-group-cell-windowsphone, .ngx-grid-group-cell-windowsphone{font-size: 16px;  font-family: 'segoe ui', arial, sans-serif; border-color: #1C1C1E; background-color: #000; color: #fff;}
+.ngx-tabs-title-selected-bottom-windowsphone, .ngx-tabs-selection-tracker-bottom-windowsphone, .ngx-tabs-title-selected-top-windowsphone, .ngx-tabs-selection-tracker-top-windowsphone{color: #ffffff; border-color:#35353A; border-bottom:1px solid #252526; background:#008a00}
+.ngx-widget-windowsphone .ngx-grid-cell-alt-windowsphone, .ngx-widget-windowsphone .ngx-grid-cell-sort-windowsphone, .ngx-widget-windowsphone .ngx-grid-cell-pinned-windowsphone, .ngx-widget-windowsphone .ngx-grid-cell-filter-windowsphone, .ngx-grid-cell-sort-alt-windowsphone, .ngx-grid-cell-filter-alt-windowsphone, .ngx-grid-cell-pinned-windowsphone, .ngx-grid-cell-alt-windowsphone, .ngx-grid-cell-sort-windowsphone{ background-color:#3E3E42; color: #fff;}
+.ngx-menu-vertical-windowsphone{}
+.ngx-widget-windowsphone .ngx-grid-cell-windowsphone, .ngx-widget-windowsphone .ngx-grid-column-header-windowsphone, .ngx-widget-windowsphone .ngx-grid-group-cell-windowsphone { border-color: #35353A;}
+
+.ngx-widget-windowsphone .ngx-grid-column-menubutton-windowsphone, .ngx-widget-windowsphone .ngx-grid-column-sortascbutton-windowsphone, .ngx-widget-windowsphone .ngx-grid-column-sortdescbutton-windowsphone, .ngx-widget-windowsphone .ngx-grid-column-filterbutton-windowsphone {
+    background-color: transparent;
+    border-color: #35353A;
+}
+.ngx-window-header-windowsphone, .ngx-input-button-header-windowsphone, .ngx-calendar-title-header-windowsphone, .ngx-grid-windowsphone .ngx-widget-header-windowsphone, .ngx-grid-header-windowsphone, .ngx-grid-column-header-windowsphone {font-size: 16px; font-family: 'Segoe WP', 'segoe ui', arial, sans-serif; border-color: #35353A; color: #ffffff; background: #3E3E42;}
+.ngx-grid-column-menubutton-windowsphone {
+    background-image: url('images/metro-icon-down-white.png');
+ }
+.ngx-widget-windowsphone .ngx-grid-cell-selected-windowsphone, .ngx-grid-cell-selected-windowsphone{ background-color:#008a00 !important; border-color: #008a00 !important; font-size: 16px;  color:#fff !important}
+.ngx-widget-windowsphone .ngx-grid-cell-hover-windowsphone, .ngx-grid-cell-hover-windowsphone{ background-color:#3E3E42;}
+ /*applied to the column's sort button when the sort order is ascending.*/
+ .ngx-grid-column-sortascbutton-windowsphone {
+    background-image: url('images/metro-icon-up-white.png');
+ }
+.ngx-grid-column-sortdescbutton-windowsphone {
+    background-image: url('images/metro-icon-down-white.png');
+}
+.ngx-checkbox-default-windowsphone {
+    background: black;
+    border-color: white;
+}
+.ngx-checkbox-check-checked-windowsphone{background:transparent url(images/wp_check_white.png) center center no-repeat}
+.ngx-checkbox-check-indeterminate-windowsphone{background:transparent url(images/wp_check_indeterminate_white.png) center center no-repeat}
+.ngx-checkbox-hover-windowsphone, .ngx-radiobutton-hover-windowsphone {
+    background-color: #000;
+    border-color: #fff;
+}
+.ngx-radiobutton-default-windowsphone {
+    background: #000;
+    border-color: #fff;
+}
+.ngx-radiobutton-check-checked-windowsphone {
+    background: #fff;
+    border-color: #fff;
+}
+.ngx-window-header-windowsphone {
+   background: #1f1f1f;
+   border-bottom-color: #1f1f1f !important;
+}
+.ngx-window-content-windowsphone {
+    background: #1f1f1f;
+ }
+.ngx-window-windowsphone {
+   border-color: #0c0c0c;
+}
+.ngx-scrollbar-thumb-state-normal-horizontal-windowsphone, .ngx-scrollbar-thumb-state-normal-windowsphone {
+    background: #686868; border-color: #686868;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.ngx-scrollbar-thumb-state-hover-horizontal-windowsphone, .ngx-scrollbar-thumb-state-hover-windowsphone {
+    background: #9E9E9E; border-color: #9E9E9E;
+}
+.ngx-scrollbar-thumb-state-pressed-horizontal-windowsphone, .ngx-scrollbar-thumb-state-pressed-windowsphone {
+    background: #ffffff; border-color: #ffffff;
+}
+.ngx-scrollbar-button-state-normal-windowsphone
+{
+    border: 1px solid #3E3E42; 
+    background: #3E3E42;
+}
+/*applied to the scrollbar buttons in hovered state.*/
+.ngx-scrollbar-button-state-hover-windowsphone
+{
+    border: 1px solid #3E3E42;
+    background: #3E3E42;
+}
+/*applied to the scrollbar buttons in pressed state.*/
+.ngx-scrollbar-button-state-pressed-windowsphone
+{
+    border: 1px solid #3E3E42;
+    background: #3E3E42;
+}
+
+/*icons*/
+.ngx-window-collapse-button-windowsphone
+{
+    background-image: url(images/metro-icon-up-white.png);
+}
+.ngx-window-collapse-button-collapsed-windowsphone {
+  background-image: url(images/metro-icon-down-white.png);
+}
+.ngx-icon-arrow-up-windowsphone, .ngx-expander-arrow-bottom-windowsphone, .ngx-menu-item-arrow-up-windowsphone
+{
+    background-image: url('images/metro-icon-up-white.png');
+}
+.ngx-icon-arrow-down-windowsphone, .ngx-expander-arrow-top-windowsphone, .ngx-tree-item-arrow-expand-windowsphone, .ngx-tree-item-arrow-expand-hover-windowsphone, .ngx-menu-item-arrow-down-windowsphone
+{
+    background-image: url('images/metro-icon-down-white.png');
+}
+.ngx-icon-arrow-left-windowsphone, .ngx-menu-item-arrow-left-windowsphone
+{
+    background-image: url('images/metro-icon-left-white.png');
+}
+.ngx-icon-arrow-right-windowsphone, .ngx-menu-item-arrow-right-windowsphone, .ngx-tree-item-arrow-collapse-windowsphone, .ngx-tree-item-arrow-collapse-hover-windowsphone
+{
+    background-image: url('images/metro-icon-right-white.png') !important;
+}
+.ngx-tabs-arrow-left-windowsphone, .ngx-tree-item-arrow-collapse-rtl-windowsphone, .ngx-tree-item-arrow-collapse-hover-rtl-windowsphone
+{
+    background-image: url('images/metro-icon-left-white.png');
+}
+.ngx-tabs-arrow-right-windowsphone
+{
+    background-image: url('images/metro-icon-right-white.png');
+}
+.ngx-menu-item-arrow-up-selected-windowsphone, .ngx-icon-arrow-up-selected-windowsphone{background-image:url('images/metro-icon-up-white.png');background-repeat:no-repeat;background-position:center;}
+.ngx-menu-item-arrow-down-selected-windowsphone, .ngx-icon-arrow-down-selected-windowsphone{background-image:url('images/metro-icon-down-white.png');background-repeat:no-repeat;background-position:center;}
+.ngx-menu-item-arrow-left-selected-windowsphone, .ngx-icon-arrow-left-selected-windowsphone{background-image:url('images/metro-icon-left-white.png');background-repeat:no-repeat;background-position:center;}
+.ngx-menu-item-arrow-right-selected-windowsphone, .ngx-icon-arrow-right-selected-windowsphone{background-image:url('images/metro-icon-right-white.png');background-repeat:no-repeat;background-position:center;}
+.ngx-window-close-button-windowsphone, .ngx-icon-close-windowsphone, .ngx-tabs-close-button-windowsphone, .ngx-tabs-close-button-hover-windowsphone, .ngx-tabs-close-button-selected-windowsphone{background-image:url(images/close_white.png);  background-repeat:no-repeat;  background-position:center}
+.ngx-listbox-feedback-windowsphone {
+    border-top: 1px dashed #fff;
+}
+.ngx-listitem-state-normal-touch-windowsphone {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.ngx-scrollbar-windowsphone .ngx-icon-arrow-up-selected-windowsphone{background-image:url('images/metro-icon-up-white.png'); background-repeat:no-repeat; background-position:center;}
+.ngx-scrollbar-windowsphone .ngx-icon-arrow-down-selected-windowsphone{background-image:url('images/metro-icon-down-white.png'); background-repeat:no-repeat; background-position:center;}
+.ngx-scrollbar-windowsphone .ngx-icon-arrow-left-selected-windowsphone{background-image:url('images/metro-icon-left-white.png'); background-repeat:no-repeat; background-position:center;}
+.ngx-scrollbar-windowsphone .ngx-icon-arrow-right-selected-windowsphone{background-image:url('images/metro-icon-right-white.png');background-repeat:no-repeat; background-position:center;}
+.ngx-combobox-arrow-normal-windowsphone .ngx-icon-arrow-down-windowsphone {
+    background-image: url('images/metro-icon-down.png');
+}
+.ngx-combobox-arrow-selected-windowsphone .ngx-icon-arrow-down-windowsphone {
+    background-image: url('images/metro-icon-down-white.png');
+}
+
+.ngx-input-button-content-windowsphone
+{  
+    font-size: 13px;
+    background: #000;
+    border-color: #2F2F2F;
+}
+.ngx-input-button-header-windowsphone {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    background: #3E3E42;
+    border-color: #2F2F2F;
+}
+.ngx-slider-button-windowsphone
+{
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    padding: 4px !important;
+}
+.ngx-slider-slider-windowsphone {
+    width: 6px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background: #fff;
+    border-color: #D5D5D5;
+}
+.ngx-listmenu-header-label-windowsphone {
+    font-size: 24px;
+    margin-left: -5px;
+}
+.ngx-listmenu-separator-windowsphone {
+    font-size: 16px; 
+    font-family: 'Segoe WP', 'segoe ui', arial, sans-serif;
+}
+.ngx-listmenu-item-label-windowsphone {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.ngx-listmenu-item-windowsphone a:link, .ngx-listmenu-item-windowsphone a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+.ngx-listmenu-item-windowsphone {
+    padding: 0px;
+}
+.ngx-dropdownlist-state-normal-windowsphone, .ngx-dropdownlist-state-hover-windowsphone, .ngx-dropdownlist-state-selected-windowsphone,
+.ngx-scrollbar-button-state-hover-windowsphone, .ngx-scrollbar-button-state-normal-windowsphone, .ngx-scrollbar-button-state-pressed-windowsphone,
+.ngx-scrollbar-thumb-state-normal-horizontal-windowsphone, .ngx-scrollbar-thumb-state-hover-horizontal-windowsphone, .ngx-scrollbar-thumb-state-pressed-horizontal-windowsphone,
+.ngx-scrollbar-thumb-state-normal-windowsphone, .ngx-scrollbar-thumb-state-pressed-windowsphone, .ngx-button-windowsphone, .ngx-tree-item-hover-windowsphone, .ngx-tree-item-selected-windowsphone,
+.ngx-tree-item-windowsphone, .ngx-menu-item-windowsphone, .ngx-menu-item-hover-windowsphone, .ngx-menu-item-selected-windowsphone, .ngx-menu-item-top-windowsphone, .ngx-menu-item-top-hover-windowsphone, 
+.ngx-menu-item-top-selected-windowsphone, .ngx-slider-button-windowsphone, .ngx-slider-slider-windowsphone
+ {
+    -webkit-transition: background-color 100ms linear;
+     -moz-transition: background-color 100ms linear;
+     -o-transition: background-color 100ms linear;
+     -ms-transition: background-color 100ms linear;
+     transition: background-color 100ms linear;
+}
+.ngx-switchbutton-windowsphone {
+    -moz-border-radius: 0px; 
+    -webkit-border-radius: 0px; 
+    border-radius: 0px;
+    border: 2px solid #FFFFFF;
+}
+.ngx-switchbutton-thumb-windowsphone {
+    width: 16px;
+    background: #fff;
+    border: 2px solid #000;
+}
+.ngx-switchbutton-label-on-windowsphone {
+    background: #008a00;
+    color: #008a00;
+    border-color: #000;
+}
+.ngx-switchbutton-label-off-windowsphone {
+    background: #000;
+    color: #000;
+}
+
+.ngx-switchbutton-wrapper-windowsphone {
+}
+.ngx-icon-arrow-first-windowsphone
+{
+    background-image: url('images/icon-first-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-arrow-last-windowsphone
+{
+    background-image: url('images/icon-last-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-progressbar-text-windowsphone {
+    font-size: 16px;
+}
+.ngx-grid-group-collapse-windowsphone {
+    background-image: url(images/metro-icon-right-white.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.ngx-grid-group-collapse-rtl-windowsphone
+{
+    padding-right: 0px;
+    background-image: url(images/metro-icon-left-white.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.ngx-grid-group-expand-windowsphone, .ngx-grid-group-expand-rtl-windowsphone
+{
+    padding-right: 0px;
+    background-image: url(images/metro-icon-down-white.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.ngx-grid-cell-windowsphone.ngx-grid-cell-selected-windowsphone>.ngx-grid-group-expand-windowsphone,
+.ngx-grid-cell-windowsphone.ngx-grid-cell-hover-windowsphone>.ngx-grid-group-expand-windowsphone {
+    background-image: url('images/metro-icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-cell-windowsphone.ngx-grid-cell-selected-windowsphone>.ngx-grid-group-collapse-windowsphone,
+.ngx-grid-cell-windowsphone.ngx-grid-cell-hover-windowsphone>.ngx-grid-group-collapse-windowsphone {
+    background-image: url('images/metro-icon-right-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-cell-windowsphone.ngx-grid-cell-selected-windowsphone>.ngx-grid-group-collapse-rtl-windowsphone,
+.ngx-grid-cell-windowsphone.ngx-grid-cell-hover-windowsphone>.ngx-grid-group-collapse-rtl-windowsphone {
+    background-image: url('images/metro-icon-left-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-grid-cell-windowsphone.ngx-grid-cell-selected-windowsphone>.ngx-grid-group-expand-rtl-windowsphone,
+.ngx-grid-cell-windowsphone.ngx-grid-cell-hover-windowsphone>.ngx-grid-group-expand-rtl-windowsphone {
+    background-image: url('images/metro-icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-tree-grid-expand-button-windowsphone {
+    margin-top: 5px;
+}
+.ngx-tree-grid-checkbox-windowsphone, .ngx-tree-grid-collapse-button-windowsphone {
+    margin-top: 3px;
+}
+.ngx-grid-table-windowsphone {
+    border-color: #000;
+}
+.ngx-icon-search-windowsphone
+{
+    background-image: url(images/search_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ngx-icon-calendar-windowsphone, .ngx-icon-calendar-hover-windowsphone, .ngx-icon-calendar-pressed-windowsphone {
+    background-image: url('images/icon-calendar-white.png');
+}
+.ngx-calendar-cell-today-windowsphone {
+    color: black;
+}
+.ngx-menu-minimized-button-windowsphone {
+   background-image: url('images/icon-menu-minimized-white.png');
+}
+.ngx-editor-toolbar-icon-windowsphone {
+    background: url('images/html_editor_white.png') no-repeat;
+}

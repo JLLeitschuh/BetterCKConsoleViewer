@@ -1,0 +1,923 @@
+/*Rounded Corners*/
+/*top-left rounded Corners*/
+.ngx-rc-tl-bootstrap {
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+/*top-right rounded Corners*/
+.ngx-rc-tr-bootstrap {
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+/*bottom-left rounded Corners*/
+.ngx-rc-bl-bootstrap {
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+/*bottom-right rounded Corners*/
+.ngx-rc-br-bootstrap {
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+/*top rounded Corners*/
+.ngx-rc-t-bootstrap {
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+/*bottom rounded Corners*/
+.ngx-rc-b-bootstrap {
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+/*right rounded Corners*/
+.ngx-rc-r-bootstrap {
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+/*left rounded Corners*/
+.ngx-rc-l-bootstrap {
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+/*all rounded Corners*/
+.ngx-rc-all-bootstrap {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.ngx-widget-bootstrap, .ngx-widget-header-bootstrap, .ngx-fill-state-normal-bootstrap,
+.ngx-widget-content-bootstrap, .ngx-fill-state-hover-bootstrap, .ngx-fill-state-pressed-bootstrap {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-transition: box-shadow linear 0.2s;
+    -moz-transition: box-shadow linear 0.1s;
+    -o-transition: box-shadow linear 0.1s;
+    transition: box-shadow linear 0.1s;
+}
+
+.ngx-widget-content-bootstrap {
+    background-color: #ffffff;
+    border-color: #e6e6e6;
+}
+
+.ngx-widget-header-bootstrap {
+    background-color: #f5f5f5;
+    border-color: #cccccc;
+}
+
+.ngx-fill-state-normal-bootstrap {
+    color: #333333;
+    background-color: #ffffff;
+    border-color: #cccccc;
+}
+
+.ngx-button-bootstrap {
+     padding: 4px 12px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    *zoom: 1;
+    color: #333333;
+    background-color: #ffffff;
+    border-color: #cccccc;
+}
+
+.ngx-combobox-multi-item-bootstrap {
+    padding: 1px 3px;
+}
+
+.ngx-fill-state-hover-bootstrap, .ngx-fill-state-pressed-bootstrap {
+    color: #333333;
+    background-color: #ebebeb;
+    border-color: #adadad;
+}
+
+.ngx-fill-state-hover-bootstrap, .ngx-fill-state-focus-bootstrap {
+    color: #333333;
+    text-decoration: none;
+}
+
+.ngx-fill-state-pressed-bootstrap {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.ngx-grid-cell-bootstrap {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.ngx-grid-column-menubutton-bootstrap {
+    background-color: transparent;
+}
+
+.ngx-calendar-row-header-bootstrap, .ngx-calendar-top-left-header-bootstrap {
+    background-color: #f0f0f0;
+    border: 0px solid #f2f2f2;
+}
+
+.ngx-calendar-column-header-bootstrap {
+    background-color: #FFF;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.ngx-expander-header-bootstrap {
+    background: #fff;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: #e6e6e6;
+}
+
+.ngx-widget-bootstrap, .ngx-widget-header-bootstrap, .ngx-widget-content-bootstrap {
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.ngx-scrollbar-state-normal-bootstrap {
+    background-color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+}
+
+.ngx-scrollbar-thumb-state-normal-bootstrap, .ngx-scrollbar-thumb-state-normal-horizontal-bootstrap {
+    background: #f5f5f5;
+    border-color: #b3b3b3;
+}
+
+.ngx-scrollbar-thumb-state-hover-bootstrap, .ngx-scrollbar-thumb-state-hover-horizontal-bootstrap {
+    background: #e6e6e6;
+    border-color: #b3b3b3;
+}
+
+.ngx-progressbar-bootstrap {
+    background: #f7f7f7 !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.ngx-progressbar-value-bootstrap, .ngx-splitter-collapse-button-horizontal-bootstrap {
+    background-color: #428bca;
+}
+
+.ngx-splitter-collapse-button-vertical-bootstrap, .ngx-progressbar-value-vertical-bootstrap {
+    background-color: #428bca;
+}
+
+.ngx-scrollbar-thumb-state-pressed-bootstrap, .ngx-splitter-splitbar-vertical-bootstrap, .ngx-splitter-splitbar-horizontal-bootstrap, .ngx-scrollbar-thumb-state-pressed-horizontal-bootstrap {
+    background: #d9d9d9;
+    border-color: #b3b3b3;
+}
+
+.ngx-grid-column-sortdescbutton-bootstrap, ngx-grid-column-filterbutton-bootstrap, .ngx-grid-column-sortascbutton-bootstrap {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-color: #cccccc;
+}
+
+.ngx-slider-rangebar-bootstrap {
+    background: #cccccc;
+}
+
+.ngx-menu-vertical-bootstrap {
+    background: #ffffff;
+    filter: none;
+}
+
+.ngx-checkbox-check-checked-bootstrap {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAcklEQVQY02NgwA/YoJgoEA/Es4DYgJBCJSBeD8SboRinBiYg7kZS2IosyQ/Eakh8LySFq4FYHFlxGRBvBOJYqMRqJMU+yApNkSRAeC0Sux3dfSCTetE0wKyXxOWhMKhTYIr9CAUXyJMzgLgBagBBgDPGAI2LGdNt0T1AAAAAAElFTkSuQmCC');
+}
+
+.ngx-combobox-content-bootstrap, .ngx-input-bootstrap {
+}
+
+.ngx-combobox-content-bootstrap {
+    border-color: #cccccc;
+}
+
+.ngx-fill-state-focus-bootstrap, .ngx-combobox-content-focus-bootstrap, .ngx-numberinput-focus-bootstrap {
+    outline: none;
+    border-color: #b3b3b3;
+}
+
+.ngx-grid-bottomright-bootstrap, .ngx-panel-bottomright-bootstrap, .ngx-listbox-bottomright-bootstrap {
+    background-color: #efefef;
+}
+
+.ngx-tabs-title-bootstrap,
+.ngx-tabs-title-bottom-bootstrap, .ngx-expander-header-bootstrap {
+    color: #0088cc !important;
+}
+
+    .ngx-expander-header-bootstrap:hover {
+        color: #005580 !important;
+        cursor: pointer;
+    }
+
+.ngx-tabs-title-hover-top-bootstrap,
+.ngx-tabs-title-hover-bottom-bootstrap {
+    color: #005580 !important;
+    background: #eee;
+    border-color: #eee;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.ngx-tabs-title-selected-top-bootstrap, .ngx-tabs-selection-tracker-top-bootstrap {
+    border-color: #ddd;
+    border-bottom: 1px solid #fff;
+    filter: none;
+    color: #555555 !important;
+    background: #fff;
+    box-shadow: none;
+}
+
+.ngx-tabs-title-selected-bottom-bootstrap, .ngx-tabs-selection-tracker-bottom-bootstrap {
+    border-color: #ddd;
+    border-top: 1px solid #fff;
+    filter: none;
+    color: #555555 !important;
+    background: #fff;
+    box-shadow: none;
+}
+
+.ngx-tabs-header-bootstrap {
+    background: #fff;
+    border-color: #ddd;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.ngx-tabs-bootstrap {
+    border-color: #ddd;
+}
+
+.ngx-window-bootstrap, .ngx-tooltip-bootstrap {
+    box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.ngx-docking-bootstrap .ngx-window-bootstrap {
+    box-shadow: none;
+}
+
+.ngx-docking-panel-bootstrap .ngx-window-bootstrap {
+    box-shadow: none;
+}
+
+.ngx-radiobutton-bootstrap {
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background: none;
+}
+
+.ngx-radiobutton-bootstrap-bootstrap, .ngx-radiobutton-hover-bootstrap {
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+}
+
+.ngx-radiobutton-check-checked-bootstrap {
+    filter: none;
+    background: #666;
+    background-repeat: no-repeat;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.ngx-radiobutton-check-indeterminate-bootstrap {
+    filter: none;
+    background: #999;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.ngx-radiobutton-check-indeterminate-disabled-bootstrap {
+    filter: none;
+    background: #999;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.ngx-slider-track-horizontal-bootstrap, .ngx-slider-track-vertical-bootstrap {
+    border-color: #cccccc;
+    background: #f0f0f0;
+}
+
+.ngx-slider-button-bootstrap {
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.ngx-fill-state-normal-bootstrap.ngx-primary {
+    color: #ffffff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+
+.ngx-fill-state-hover-bootstrap.ngx-primary {
+    color: #ffffff;
+    background-color: #3276b1;
+    border-color: #285e8e;
+}
+
+.ngx-fill-state-pressed-bootstrap.ngx-primary {
+    color: #ffffff;
+    background-color: #3276b1;
+    border-color: #285e8e;
+}
+
+.ngx-fill-state-normal-bootstrap.ngx-warning {
+    color: #ffffff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.ngx-fill-state-hover-bootstrap.ngx-warning {
+    color: #ffffff;
+    background-color: #ed9c28;
+    border-color: #d58512;
+}
+
+.ngx-fill-state-pressed-bootstrap.ngx-warning {
+    color: #ffffff;
+    background-color: #ed9c28;
+    border-color: #d58512;
+}
+
+.ngx-fill-state-normal-bootstrap.ngx-danger {
+    color: #ffffff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.ngx-fill-state-hover-bootstrap.ngx-danger {
+    color: #ffffff;
+    background-color: #d2322d;
+    border-color: #ac2925;
+}
+
+.ngx-fill-state-pressed-bootstrap.ngx-danger {
+    color: #ffffff;
+    background-color: #d2322d;
+    border-color: #ac2925;
+}
+
+.ngx-fill-state-normal-bootstrap.ngx-success {
+    color: #ffffff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.ngx-fill-state-hover-bootstrap.ngx-success {
+    color: #ffffff;
+    background-color: #47a447;
+    border-color: #398439;
+}
+
+.ngx-fill-state-pressed-bootstrap.ngx-success {
+    color: #ffffff;
+    background-color: #47a447;
+    border-color: #398439;
+}
+
+.ngx-fill-state-normal-bootstrap.ngx-info {
+    color: #ffffff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.ngx-fill-state-hover-bootstrap.ngx-info {
+    color: #ffffff;
+    background-color: #39b3d7;
+    border-color: #269abc;
+}
+
+.ngx-fill-state-pressed-bootstrap.ngx-info {
+    color: #ffffff;
+    background-color: #39b3d7;
+    border-color: #269abc;
+}
+
+.ngx-fill-state-normal-bootstrap.ngx-inverse {
+    color: #ffffff;
+    background-color: #222222;
+    border-color: #080808;
+}
+
+.ngx-fill-state-hover-bootstrap.ngx-inverse {
+    color: #ffffff;
+    background-color: #080808;
+}
+
+.ngx-fill-state-pressed-bootstrap.ngx-inverse {
+    color: #ffffff;
+    background-color: #080808;
+}
+
+/*applied to a list item when the item is selected.*/
+.ngx-listitem-state-hover-bootstrap, .ngx-menu-item-hover-bootstrap, .ngx-tree-item-hover-bootstrap, .ngx-calendar-cell-hover-bootstrap, .ngx-grid-cell-hover-bootstrap,
+.ngx-menu-vertical-bootstrap .ngx-menu-item-top-hover-bootstrap, .ngx-input-popup-bootstrap .ngx-fill-state-hover-bootstrap,
+.ngx-input-button-header-bootstrap, .ngx-input-popup-bootstrap .ngx-fill-state-pressed-bootstrap,
+.ngx-input-button-header-bootstrap {
+    color: #ffffff !important;
+    color: #333333 !important;
+    background-color: #ebebeb !important;
+    border-color: #ebebeb !important;
+    outline: 0;
+}
+.ngx-grid-cell-hover-bootstrap {
+    border-color: #ccc !important;
+}
+.ngx-listitem-state-selected-bootstrap, .ngx-menu-item-selected-bootstrap, .ngx-tree-item-selected-bootstrap, .ngx-calendar-cell-selected-bootstrap, .ngx-grid-cell-selected-bootstrap,
+.ngx-menu-vertical-bootstrap .ngx-menu-item-top-selected-bootstrap, .ngx-grid-selectionarea-bootstrap {
+    color: #ffffff !important;
+    background-color: #428bca !important;
+    border-color: #357ebd !important;
+}
+/*top rounded Corners*/
+.ngx-rc-t-expanded-bootstrap {
+    -moz-border-radius-topleft: 4px !important;
+    -webkit-border-top-left-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+    -moz-border-radius-topright: 4px !important;
+    -webkit-border-top-right-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+}
+/*bottom rounded Corners*/
+.ngx-rc-b-expanded-bootstrap {
+    -moz-border-radius-bottomleft: 4px !important;
+    -webkit-border-bottom-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    -moz-border-radius-bottomright: 4px !important;
+    -webkit-border-bottom-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+}
+
+.ngx-popup-bootstrap.ngx-listbox-bootstrap, .ngx-popup-bootstrap.ngx-calendar-bootstrap {
+    top: 2px !important;
+    position: relative;
+}
+
+.ngx-popup-up-bootstrap.ngx-listbox-bootstrap, .ngx-popup-up-bootstrap.ngx-calendar-bootstrap {
+    top: 23px !important;
+    position: relative;
+}
+
+.ngx-menu-popup-bootstrap > div:first-child {
+    padding-bottom: 15px !important;
+    padding-right: 15px !important;
+}
+
+.ngx-menu-dropdown-bootstrap, .ngx-popup-bootstrap.ngx-dropdownbutton-popup-bootstrap {
+    margin-top: 2px !important;
+}
+
+.ngx-popup-bootstrap {
+    border: 1px solid #ccc;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+    -webkit-box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    -webkit-background-clip: padding-box !important;
+    -moz-background-clip: padding !important;
+    background-clip: padding-box !important;
+}
+
+.ngx-widget-bootstrap .ngx-grid-cell-bootstrap, .ngx-widget-bootstrap .ngx-grid-column-header-bootstrap, .ngx-widget-bootstrap .ngx-grid-group-cell {
+    border-color: #ccc;
+}
+
+.ngx-widget-bootstrap .ngx-grid-column-menubutton-bootstrap, .ngx-widget-bootstrap .ngx-grid-column-sortascbutton-bootstrap, .ngx-widget-bootstrap .ngx-grid-column-sortdescbutton-bootstrap, .ngx-widget .ngx-grid-column-filterbutton-bootstrap {
+    border-color: #ccc;
+}
+
+.ngx-grid-column-sortascbutton-bootstrap, .ngx-expander-arrow-bottom-bootstrap, .ngx-window-collapse-button-bootstrap, .ngx-menu-item-arrow-up-bootstrap, .ngx-menu-item-arrow-up-selected-bootstrap, .ngx-menu-item-arrow-top-up-bootstrap, .ngx-icon-arrow-up-bootstrap, .ngx-icon-arrow-up-hover-bootstrap, .ngx-icon-arrow-up-selected-bootstrap {
+    background-image: url('images/icon-up.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-widget-bootstrap .ngx-grid-group-expand-bootstrap, .ngx-grid-group-expand-bootstrap, .ngx-grid-column-menubutton-bootstrap, .ngx-grid-column-sortdescbutton-bootstrap, .ngx-expander-arrow-top-bootstrap, .ngx-window-collapse-button-collapsed-bootstrap, .ngx-menu-item-arrow-down-bootstrap, .ngx-menu-item-arrow-down-selected-bootstrap, .ngx-menu-item-arrow-down-bootstrap, .ngx-icon-arrow-down-bootstrap, .ngx-icon-arrow-down-hover-bootstrap, .ngx-icon-arrow-down-selected-bootstrap {
+    background-image: url('images/icon-down.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-tabs-arrow-left-bootstrap, .ngx-menu-item-arrow-left-selected-bootstrap, .ngx-menu-item-arrow-top-left, .ngx-icon-arrow-left-bootstrap, .ngx-icon-arrow-down-left-bootstrap, .ngx-icon-arrow-left-selected-bootstrap {
+    background-image: url('images/icon-left.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-widget-bootstrap .ngx-grid-group-collapse-bootstrap, .ngx-grid-group-collapse-bootstrap, .ngx-tabs-arrow-right-bootstrap, .ngx-menu-item-arrow-right-selected-bootstrap, .ngx-menu-item-arrow-top-right-bootstrap, .ngx-icon-arrow-right-bootstrap, .ngx-icon-arrow-right-hover-bootstrap, .ngx-icon-arrow-right-selected-bootstrap {
+    background-image: url('images/icon-right.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-tree-item-arrow-collapse-rtl-bootstrap, .ngx-tree-item-arrow-collapse-hover-rtl-bootstrap {
+    background-image: url(images/icon-left.png);
+}
+
+.ngx-menu-item-arrow-left-selected-bootstrap {
+    background-image: url('images/icon-left-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-menu-item-arrow-right-selected-bootstrap {
+    background-image: url('images/icon-right-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-primary .ngx-grid-column-sortascbutton-bootstrap, .ngx-primary .ngx-expander-arrow-bottom-bootstrap, .ngx-primary .ngx-window-collapse-button-bootstrap, .ngx-primary .ngx-menu-item-arrow-up-bootstrap, .ngx-primary .ngx-menu-item-arrow-up-selected-bootstrap, .ngx-primary .ngx-menu-item-arrow-top-up-bootstrap, .ngx-primary .ngx-icon-arrow-up-bootstrap, .ngx-primary .ngx-icon-arrow-up-hover-bootstrap, .ngx-primary .ngx-icon-arrow-up-selected-bootstrap {
+    background-image: url('images/icon-up-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-primary .ngx-widget-bootstrap .ngx-primary .ngx-grid-group-expand-bootstrap, .ngx-primary .ngx-grid-group-expand-bootstrap, .ngx-primary .ngx-grid-column-menubutton-bootstrap, .ngx-primary .ngx-grid-column-sortdescbutton-bootstrap, .ngx-primary .ngx-expander-arrow-top-bootstrap, .ngx-primary .ngx-window-collapse-button-collapsed-bootstrap, .ngx-primary .ngx-menu-item-arrow-down-bootstrap, .ngx-primary .ngx-menu-item-arrow-down-selected-bootstrap, .ngx-primary .ngx-menu-item-arrow-down-bootstrap, .ngx-primary .ngx-icon-arrow-down-bootstrap, .ngx-primary .ngx-icon-arrow-down-hover-bootstrap, .ngx-primary .ngx-icon-arrow-down-selected-bootstrap {
+    background-image: url('images/icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-primary .ngx-tabs-arrow-left-bootstrap, .ngx-primary .ngx-menu-item-arrow-left-selected-bootstrap, .ngx-primary .ngx-menu-item-arrow-top-left, .ngx-primary .ngx-icon-arrow-left-bootstrap, .ngx-primary .ngx-icon-arrow-down-left-bootstrap, .ngx-primary .ngx-icon-arrow-left-selected-bootstrap {
+    background-image: url('images/icon-left-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-primary .ngx-widget-bootstrap .ngx-primary .ngx-grid-group-collapse-bootstrap, .ngx-primary .ngx-grid-group-collapse-bootstrap, .ngx-primary .ngx-tabs-arrow-right-bootstrap, .ngx-primary .ngx-menu-item-arrow-right-selected-bootstrap, .ngx-primary .ngx-menu-item-arrow-top-right-bootstrap, .ngx-primary .ngx-icon-arrow-right-bootstrap, .ngx-primary .ngx-icon-arrow-right-hover-bootstrap, .ngx-primary .ngx-icon-arrow-right-selected-bootstrap {
+    background-image: url('images/icon-right-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-primary .ngx-window-close-button-bootstrap, .ngx-primary .ngx-icon-close-bootstrap, .ngx-primary .ngx-tabs-close-button-bootstrap, .ngx-primary .ngx-tabs-close-button-hover-bootstrap, .ngx-primary .ngx-tabs-close-button-selected-bootstrap {
+    background-image: url(images/close_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-primary .ngx-tree-item-arrow-collapse-rtl-bootstrap, .ngx-primary .ngx-tree-item-arrow-collapse-hover-rtl-bootstrap {
+    background-image: url(images/icon-left.png);
+}
+
+.ngx-warning .ngx-grid-column-sortascbutton-bootstrap, .ngx-warning .ngx-expander-arrow-bottom-bootstrap, .ngx-warning .ngx-window-collapse-button-bootstrap, .ngx-warning .ngx-menu-item-arrow-up-bootstrap, .ngx-warning .ngx-menu-item-arrow-up-selected-bootstrap, .ngx-warning .ngx-menu-item-arrow-top-up-bootstrap, .ngx-warning .ngx-icon-arrow-up-bootstrap, .ngx-warning .ngx-icon-arrow-up-hover-bootstrap, .ngx-warning .ngx-icon-arrow-up-selected-bootstrap {
+    background-image: url('images/icon-up-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-warning .ngx-widget-bootstrap .ngx-warning .ngx-grid-group-expand-bootstrap, .ngx-warning .ngx-grid-group-expand-bootstrap, .ngx-warning .ngx-grid-column-menubutton-bootstrap, .ngx-warning .ngx-grid-column-sortdescbutton-bootstrap, .ngx-warning .ngx-expander-arrow-top-bootstrap, .ngx-warning .ngx-window-collapse-button-collapsed-bootstrap, .ngx-warning .ngx-menu-item-arrow-down-bootstrap, .ngx-warning .ngx-menu-item-arrow-down-selected-bootstrap, .ngx-warning .ngx-menu-item-arrow-down-bootstrap, .ngx-warning .ngx-icon-arrow-down-bootstrap, .ngx-warning .ngx-icon-arrow-down-hover-bootstrap, .ngx-warning .ngx-icon-arrow-down-selected-bootstrap {
+    background-image: url('images/icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-warning .ngx-tabs-arrow-left-bootstrap, .ngx-warning .ngx-menu-item-arrow-left-selected-bootstrap, .ngx-warning .ngx-menu-item-arrow-top-left, .ngx-warning .ngx-icon-arrow-left-bootstrap, .ngx-warning .ngx-icon-arrow-down-left-bootstrap, .ngx-warning .ngx-icon-arrow-left-selected-bootstrap {
+    background-image: url('images/icon-left-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-warning .ngx-widget-bootstrap .ngx-warning .ngx-grid-group-collapse-bootstrap, .ngx-warning .ngx-grid-group-collapse-bootstrap, .ngx-warning .ngx-tabs-arrow-right-bootstrap, .ngx-warning .ngx-menu-item-arrow-right-selected-bootstrap, .ngx-warning .ngx-menu-item-arrow-top-right-bootstrap, .ngx-warning .ngx-icon-arrow-right-bootstrap, .ngx-warning .ngx-icon-arrow-right-hover-bootstrap, .ngx-warning .ngx-icon-arrow-right-selected-bootstrap {
+    background-image: url('images/icon-right-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-warning .ngx-window-close-button-bootstrap, .ngx-warning .ngx-icon-close-bootstrap, .ngx-warning .ngx-tabs-close-button-bootstrap, .ngx-warning .ngx-tabs-close-button-hover-bootstrap, .ngx-warning .ngx-tabs-close-button-selected-bootstrap {
+    background-image: url(images/close_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-warning .ngx-tree-item-arrow-collapse-rtl-bootstrap, .ngx-warning .ngx-tree-item-arrow-collapse-hover-rtl-bootstrap {
+    background-image: url(images/icon-left.png);
+}
+
+.ngx-danger .ngx-grid-column-sortascbutton-bootstrap, .ngx-danger .ngx-expander-arrow-bottom-bootstrap, .ngx-danger .ngx-window-collapse-button-bootstrap, .ngx-danger .ngx-menu-item-arrow-up-bootstrap, .ngx-danger .ngx-menu-item-arrow-up-selected-bootstrap, .ngx-danger .ngx-menu-item-arrow-top-up-bootstrap, .ngx-danger .ngx-icon-arrow-up-bootstrap, .ngx-danger .ngx-icon-arrow-up-hover-bootstrap, .ngx-danger .ngx-icon-arrow-up-selected-bootstrap {
+    background-image: url('images/icon-up-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-danger .ngx-widget-bootstrap .ngx-danger .ngx-grid-group-expand-bootstrap, .ngx-danger .ngx-grid-group-expand-bootstrap, .ngx-danger .ngx-grid-column-menubutton-bootstrap, .ngx-danger .ngx-grid-column-sortdescbutton-bootstrap, .ngx-danger .ngx-expander-arrow-top-bootstrap, .ngx-danger .ngx-window-collapse-button-collapsed-bootstrap, .ngx-danger .ngx-menu-item-arrow-down-bootstrap, .ngx-danger .ngx-menu-item-arrow-down-selected-bootstrap, .ngx-danger .ngx-menu-item-arrow-down-bootstrap, .ngx-danger .ngx-icon-arrow-down-bootstrap, .ngx-danger .ngx-icon-arrow-down-hover-bootstrap, .ngx-danger .ngx-icon-arrow-down-selected-bootstrap {
+    background-image: url('images/icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-danger .ngx-tabs-arrow-left-bootstrap, .ngx-danger .ngx-menu-item-arrow-left-selected-bootstrap, .ngx-danger .ngx-menu-item-arrow-top-left, .ngx-danger .ngx-icon-arrow-left-bootstrap, .ngx-danger .ngx-icon-arrow-down-left-bootstrap, .ngx-danger .ngx-icon-arrow-left-selected-bootstrap {
+    background-image: url('images/icon-left-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-danger .ngx-widget-bootstrap .ngx-danger .ngx-grid-group-collapse-bootstrap, .ngx-danger .ngx-grid-group-collapse-bootstrap, .ngx-danger .ngx-tabs-arrow-right-bootstrap, .ngx-danger .ngx-menu-item-arrow-right-selected-bootstrap, .ngx-danger .ngx-menu-item-arrow-top-right-bootstrap, .ngx-danger .ngx-icon-arrow-right-bootstrap, .ngx-danger .ngx-icon-arrow-right-hover-bootstrap, .ngx-danger .ngx-icon-arrow-right-selected-bootstrap {
+    background-image: url('images/icon-right-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-danger .ngx-window-close-button-bootstrap, .ngx-danger .ngx-icon-close-bootstrap, .ngx-danger .ngx-tabs-close-button-bootstrap, .ngx-danger .ngx-tabs-close-button-hover-bootstrap, .ngx-danger .ngx-tabs-close-button-selected-bootstrap {
+    background-image: url(images/close_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-danger .ngx-tree-item-arrow-collapse-rtl-bootstrap, .ngx-danger .ngx-tree-item-arrow-collapse-hover-rtl-bootstrap {
+    background-image: url(images/icon-left.png);
+}
+
+.ngx-info .ngx-grid-column-sortascbutton-bootstrap, .ngx-info .ngx-expander-arrow-bottom-bootstrap, .ngx-info .ngx-window-collapse-button-bootstrap, .ngx-info .ngx-menu-item-arrow-up-bootstrap, .ngx-info .ngx-menu-item-arrow-up-selected-bootstrap, .ngx-info .ngx-menu-item-arrow-top-up-bootstrap, .ngx-info .ngx-icon-arrow-up-bootstrap, .ngx-info .ngx-icon-arrow-up-hover-bootstrap, .ngx-info .ngx-icon-arrow-up-selected-bootstrap {
+    background-image: url('images/icon-up-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-info .ngx-widget-bootstrap .ngx-info .ngx-grid-group-expand-bootstrap, .ngx-info .ngx-grid-group-expand-bootstrap, .ngx-info .ngx-grid-column-menubutton-bootstrap, .ngx-info .ngx-grid-column-sortdescbutton-bootstrap, .ngx-info .ngx-expander-arrow-top-bootstrap, .ngx-info .ngx-window-collapse-button-collapsed-bootstrap, .ngx-info .ngx-menu-item-arrow-down-bootstrap, .ngx-info .ngx-menu-item-arrow-down-selected-bootstrap, .ngx-info .ngx-menu-item-arrow-down-bootstrap, .ngx-info .ngx-icon-arrow-down-bootstrap, .ngx-info .ngx-icon-arrow-down-hover-bootstrap, .ngx-info .ngx-icon-arrow-down-selected-bootstrap {
+    background-image: url('images/icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-info .ngx-tabs-arrow-left-bootstrap, .ngx-info .ngx-menu-item-arrow-left-selected-bootstrap, .ngx-info .ngx-menu-item-arrow-top-left, .ngx-info .ngx-icon-arrow-left-bootstrap, .ngx-info .ngx-icon-arrow-down-left-bootstrap, .ngx-info .ngx-icon-arrow-left-selected-bootstrap {
+    background-image: url('images/icon-left-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-info .ngx-widget-bootstrap .ngx-info .ngx-grid-group-collapse-bootstrap, .ngx-info .ngx-grid-group-collapse-bootstrap, .ngx-info .ngx-tabs-arrow-right-bootstrap, .ngx-info .ngx-menu-item-arrow-right-selected-bootstrap, .ngx-info .ngx-menu-item-arrow-top-right-bootstrap, .ngx-info .ngx-icon-arrow-right-bootstrap, .ngx-info .ngx-icon-arrow-right-hover-bootstrap, .ngx-info .ngx-icon-arrow-right-selected-bootstrap {
+    background-image: url('images/icon-right-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-info .ngx-window-close-button-bootstrap, .ngx-info .ngx-icon-close-bootstrap, .ngx-info .ngx-tabs-close-button-bootstrap, .ngx-info .ngx-tabs-close-button-hover-bootstrap, .ngx-info .ngx-tabs-close-button-selected-bootstrap {
+    background-image: url(images/close_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-info .ngx-tree-item-arrow-collapse-rtl-bootstrap, .ngx-info .ngx-tree-item-arrow-collapse-hover-rtl-bootstrap {
+    background-image: url(images/icon-left.png);
+}
+
+.ngx-success .ngx-grid-column-sortascbutton-bootstrap, .ngx-success .ngx-expander-arrow-bottom-bootstrap, .ngx-success .ngx-window-collapse-button-bootstrap, .ngx-success .ngx-menu-item-arrow-up-bootstrap, .ngx-success .ngx-menu-item-arrow-up-selected-bootstrap, .ngx-success .ngx-menu-item-arrow-top-up-bootstrap, .ngx-success .ngx-icon-arrow-up-bootstrap, .ngx-success .ngx-icon-arrow-up-hover-bootstrap, .ngx-success .ngx-icon-arrow-up-selected-bootstrap {
+    background-image: url('images/icon-up-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-success .ngx-widget-bootstrap .ngx-success .ngx-grid-group-expand-bootstrap, .ngx-success .ngx-grid-group-expand-bootstrap, .ngx-success .ngx-grid-column-menubutton-bootstrap, .ngx-success .ngx-grid-column-sortdescbutton-bootstrap, .ngx-success .ngx-expander-arrow-top-bootstrap, .ngx-success .ngx-window-collapse-button-collapsed-bootstrap, .ngx-success .ngx-menu-item-arrow-down-bootstrap, .ngx-success .ngx-menu-item-arrow-down-selected-bootstrap, .ngx-success .ngx-menu-item-arrow-down-bootstrap, .ngx-success .ngx-icon-arrow-down-bootstrap, .ngx-success .ngx-icon-arrow-down-hover-bootstrap, .ngx-success .ngx-icon-arrow-down-selected-bootstrap {
+    background-image: url('images/icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-success .ngx-tabs-arrow-left-bootstrap, .ngx-success .ngx-menu-item-arrow-left-selected-bootstrap, .ngx-success .ngx-menu-item-arrow-top-left, .ngx-success .ngx-icon-arrow-left-bootstrap, .ngx-success .ngx-icon-arrow-down-left-bootstrap, .ngx-success .ngx-icon-arrow-left-selected-bootstrap {
+    background-image: url('images/icon-left-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-success .ngx-widget-bootstrap .ngx-success .ngx-grid-group-collapse-bootstrap, .ngx-success .ngx-grid-group-collapse-bootstrap, .ngx-success .ngx-tabs-arrow-right-bootstrap, .ngx-success .ngx-menu-item-arrow-right-selected-bootstrap, .ngx-success .ngx-menu-item-arrow-top-right-bootstrap, .ngx-success .ngx-icon-arrow-right-bootstrap, .ngx-success .ngx-icon-arrow-right-hover-bootstrap, .ngx-success .ngx-icon-arrow-right-selected-bootstrap {
+    background-image: url('images/icon-right-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-success .ngx-window-close-button-bootstrap, .ngx-success .ngx-icon-close-bootstrap, .ngx-success .ngx-tabs-close-button-bootstrap, .ngx-success .ngx-tabs-close-button-hover-bootstrap, .ngx-success .ngx-tabs-close-button-selected-bootstrap {
+    background-image: url(images/close_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-success .ngx-tree-item-arrow-collapse-rtl-bootstrap, .ngx-success .ngx-tree-item-arrow-collapse-hover-rtl-bootstrap {
+    background-image: url(images/icon-left.png);
+}
+
+.ngx-inverse .ngx-grid-column-sortascbutton-bootstrap, .ngx-inverse .ngx-expander-arrow-bottom-bootstrap, .ngx-inverse .ngx-window-collapse-button-bootstrap, .ngx-inverse .ngx-menu-item-arrow-up-bootstrap, .ngx-inverse .ngx-menu-item-arrow-up-selected-bootstrap, .ngx-inverse .ngx-menu-item-arrow-top-up-bootstrap, .ngx-inverse .ngx-icon-arrow-up-bootstrap, .ngx-inverse .ngx-icon-arrow-up-hover-bootstrap, .ngx-inverse .ngx-icon-arrow-up-selected-bootstrap {
+    background-image: url('images/icon-up-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-inverse .ngx-widget-bootstrap .ngx-inverse .ngx-grid-group-expand-bootstrap, .ngx-inverse .ngx-grid-group-expand-bootstrap, .ngx-inverse .ngx-grid-column-menubutton-bootstrap, .ngx-inverse .ngx-grid-column-sortdescbutton-bootstrap, .ngx-inverse .ngx-expander-arrow-top-bootstrap, .ngx-inverse .ngx-window-collapse-button-collapsed-bootstrap, .ngx-inverse .ngx-menu-item-arrow-down-bootstrap, .ngx-inverse .ngx-menu-item-arrow-down-selected-bootstrap, .ngx-inverse .ngx-menu-item-arrow-down-bootstrap, .ngx-inverse .ngx-icon-arrow-down-bootstrap, .ngx-inverse .ngx-icon-arrow-down-hover-bootstrap, .ngx-inverse .ngx-icon-arrow-down-selected-bootstrap {
+    background-image: url('images/icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-inverse .ngx-tabs-arrow-left-bootstrap, .ngx-inverse .ngx-menu-item-arrow-left-selected-bootstrap, .ngx-inverse .ngx-menu-item-arrow-top-left, .ngx-inverse .ngx-icon-arrow-left-bootstrap, .ngx-inverse .ngx-icon-arrow-down-left-bootstrap, .ngx-inverse .ngx-icon-arrow-left-selected-bootstrap {
+    background-image: url('images/icon-left-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-inverse .ngx-widget-bootstrap .ngx-inverse .ngx-grid-group-collapse-bootstrap, .ngx-inverse .ngx-grid-group-collapse-bootstrap, .ngx-inverse .ngx-tabs-arrow-right-bootstrap, .ngx-inverse .ngx-menu-item-arrow-right-selected-bootstrap, .ngx-inverse .ngx-menu-item-arrow-top-right-bootstrap, .ngx-inverse .ngx-icon-arrow-right-bootstrap, .ngx-inverse .ngx-icon-arrow-right-hover-bootstrap, .ngx-inverse .ngx-icon-arrow-right-selected-bootstrap {
+    background-image: url('images/icon-right-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-inverse .ngx-window-close-button-bootstrap, .ngx-inverse .ngx-icon-close-bootstrap, .ngx-inverse .ngx-tabs-close-button-bootstrap, .ngx-inverse .ngx-tabs-close-button-hover-bootstrap, .ngx-inverse .ngx-tabs-close-button-selected-bootstrap {
+    background-image: url(images/close_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-inverse .ngx-tree-item-arrow-collapse-rtl-bootstrap, .ngx-inverse .ngx-tree-item-arrow-collapse-hover-rtl-bootstrap {
+    background-image: url(images/icon-left.png);
+}
+
+
+.ngx-input-button-content-bootstrap {
+    font-size: 10px;
+}
+
+.ngx-combobox-content-bootstrap, .ngx-input-bootstrap {
+    border-color: #cccccc;
+    color: #555555;
+    background-color: #ffffff;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+.ngx-combobox-content-bootstrap, .ngx-combobox-bootstrap, .ngx-combobox-state-normal-bootstrap {
+    border-color: #cccccc;
+}
+
+.ngx-combobox-content-focus-bootstrap, .ngx-combobox-state-focus-bootstrap, .ngx-fill-state-focus-bootstrap,
+.ngx-numberinput-focus-bootstrap {
+    outline: none;
+    border-color: rgba(82, 168, 236, 0.8);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+.ngx-datetimeinput-content, .ngx-datetimeinput-container {
+    overflow: visible !important;
+}
+
+input[type="text"].ngx-input-bootstrap, input[type="text"].ngx-widget-content-bootstrap, input[type="textarea"].ngx-widget-content-bootstrap, textarea.ngx-input-bootstrap {
+    padding-left: 0px !important;
+}
+
+input[type="text"].ngx-input-bootstrap:-moz-placeholder, input[type="text"].ngx-widget-content-bootstrap:-moz-placeholder, input[type="textarea"].ngx-widget-content-bootstrap:-moz-placeholder, textarea.ngx-input-bootstrap:-moz-placeholder {
+    color: #999999;
+}
+
+input[type="text"].ngx-input-bootstrap:-webkit-input-placeholder, input[type="text"].ngx-widget-content-bootstrap:-webkit-input-placeholder, input[type="textarea"].ngx-widget-content-bootstrap:-webkit-input-placeholder, textarea.ngx-input-bootstrap:-webkit-input-placeholder {
+    color: #999999;
+}
+
+input[type="text"].ngx-input-bootstrap:-ms-input-placeholder, input[type="text"].ngx-widget-content-bootstrap:-ms-input-placeholder, input[type="textarea"].ngx-widget-content-bootstrap:-ms-input-placeholder, textarea.ngx-input-bootstrap:-ms-input-placeholder {
+    color: #999999;
+}
+
+input[type="password"].ngx-input-bootstrap, input[type="password"].ngx-widget-content-bootstrap, input[type="textarea"].ngx-widget-content-bootstrap, textarea.ngx-input-bootstrap {
+    padding-left: 0px !important;
+}
+
+input[type="password"].ngx-input-bootstrap:-moz-placeholder, input[type="password"].ngx-widget-content-bootstrap:-moz-placeholder, input[type="textarea"].ngx-widget-content-bootstrap:-moz-placeholder, textarea.ngx-input-bootstrap:-moz-placeholder {
+    color: #999999;
+}
+
+input[type="password"].ngx-input-bootstrap:-webkit-input-placeholder, input[type="password"].ngx-widget-content-bootstrap:-webkit-input-placeholder, input[type="textarea"].ngx-widget-content-bootstrap:-webkit-input-placeholder, textarea.ngx-input-bootstrap:-webkit-input-placeholder {
+    color: #999999;
+}
+
+input[type="password"].ngx-input-bootstrap:-ms-input-placeholder, input[type="password"].ngx-widget-content-bootstrap:-ms-input-placeholder, input[type="textarea"].ngx-widget-content-bootstrap:-ms-input-placeholder, textarea.ngx-input-bootstrap:-ms-input-placeholder {
+    color: #999999;
+}
+
+.ngx-dropdownlist-state-normal-bootstrap.ngx-fill-state-focus-bootstrap, .ngx-listbox-bootstrap.ngx-fill-state-focus-bootstrap {
+    outline: none;
+    border-color: #b2b2b2;
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.ngx-dropdownlist-state-normal-bootstrap.ngx-fill-state-focus-bootstrap.ngx-primary {
+    border-color: #0044cc #0044cc #002a80;
+}
+
+.ngx-dropdownlist-state-normal-bootstrap.ngx-fill-state-focus-bootstrap.ngx-warning {
+    border-color: #f89406 #f89406 #ad6704;
+}
+
+.ngx-dropdownlist-state-normal-bootstrap.ngx-fill-state-focus-bootstrap.ngx-danger {
+    border-color: #bd362f #bd362f #802420;
+}
+
+.ngx-dropdownlist-state-normal-bootstrap.ngx-fill-state-focus-bootstrap.ngx-success {
+    border-color: #51a351 #51a351 #387038;
+}
+
+.ngx-dropdownlist-state-normal-bootstrap.ngx-fill-state-focus-bootstrap.ngx-info {
+    border-color: #2f96b4 #2f96b4 #1f6377;
+}
+
+.ngx-dropdownlist-state-normal-bootstrap.ngx-fill-state-focus-bootstrap.ngx-inverse {
+    border-color: #222222 #222222 #000000;
+}
+
+.ngx-popup-bootstrap.ngx-fill-state-focus-bootstrap {
+    border: 1px solid #ccc;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+    -webkit-box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.ngx-expander-content-bootstrap.ngx-fill-state-focus-bootstrap {
+    z-index: 20;
+}
+
+.ngx-slider-rangebar-bootstrap {
+    border-color: #428bca;
+    background: #428bca;
+}
+
+.ngx-slider-button-bootstrap {
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    padding: 3px;
+}
+
+.ngx-grid-cell-bootstrap.ngx-grid-cell-selected-bootstrap > .ngx-grid-group-expand-bootstrap {
+    background-image: url('images/icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-grid-cell-bootstrap.ngx-grid-cell-selected-bootstrap > .ngx-grid-group-collapse-bootstrap {
+    background-image: url('images/icon-right-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-grid-cell-bootstrap.ngx-grid-cell-selected-bootstrap > .ngx-grid-group-collapse-rtl-bootstrap {
+    background-image: url('images/icon-left-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ngx-grid-cell-bootstrap.ngx-grid-cell-selected-bootstrap > .ngx-grid-group-expand-rtl-bootstrap {
+    background-image: url('images/icon-down-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}

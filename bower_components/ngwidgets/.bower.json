@@ -1,0 +1,14 @@
+{
+  "name": "ngwidgets",
+  "homepage": "https://github.com/jqwidgets/ngwidgets",
+  "_release": "5698b4d8db",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "5698b4d8dbc5adbd6a7dc7b425dc01c1d789d447"
+  },
+  "_source": "https://github.com/jqwidgets/ngwidgets.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/jqwidgets/ngwidgets.git",
+  "_direct": true
+}
