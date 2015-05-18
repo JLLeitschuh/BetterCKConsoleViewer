@@ -8,3 +8,7 @@ If you are a current IQP Group, I'm sorry. Enjoy Venice.
 
 In order to update this page you need to push to the branch 'gh-pages'.
 
+Licensing
+---------
+
+This project uses ngWidgets. It is free for non-comercial uses (as this project is). For more info: http://www.ngwidgets.com/license/.
