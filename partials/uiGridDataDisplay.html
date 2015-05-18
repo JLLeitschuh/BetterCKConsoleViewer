@@ -1,0 +1,14 @@
+<div class="container">
+	<h1>{{dataName}}</h1>
+	<p>Note: This page may take a long time to load. This is normal. Please only reload the page if it takes longer than 2 minutes to load</p>
+</div>
+<div class="container-fluid" style="padding-left:3px; padding-right:3px;">
+  <style>
+  .gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 100%;
+    height: 600px
+  }
+  </style>
+  <div ui-grid="gridOptions" class="gridStyle" ui-grid-resize-columns ui-grid-move-columns ui-grid-grouping ui-grid-pinning></div>
+</div>

@@ -305,6 +305,94 @@ angular.module('CKConsoleViewerApp.controllers', []).
 		};
 
 	}).
+	controller('uiDataDisplayController',function($scope, $routeParams, ckConsole){
+		var groupName = $routeParams.group;
+		var getImageHeaderName = function(value){
+			return "Image " + value;
+		};
+		$scope.dataName = groupName;
+		$scope.simpleDataList = [];
+		$scope.columnDefs = [
+			{field: 'id', width: 100, groupable: false},
+			{field: 'birthID', displayName:'birthID', width: 50},
+			{field: 'dor', width: 100},
+			{field: 'lat', width: 75},
+			{field: 'lon', width: 75},
+		];
+		//$scope.dataHeaders = _.uniq($scope.dataHeaders.concat(memberData.dataHeaders));
+		ckConsole.getGroup(groupName).then(function(infoData){
+			console.log(infoData);
+
+			var maxImageCount = 0;
+			var headerFieldNames = [];
+			function SimpleData(id, dataObj){
+				this.id = id;
+				this.birthID = dataObj.birth_certificate.birthID;
+				this.dor = dataObj.birth_certificate.dor;
+				this.lat = dataObj.birth_certificate.lat;
+				this.lon = dataObj.birth_certificate.lon;
+
+				var images = null;
+				try{
+					images = dataObj.media.images;
+					var imageCount = 0;
+					for(var imageId in images){
+						this[getImageHeaderName(imageCount)] = images[imageId].thumb;
+						this[getImageHeaderName(imageCount) + 'original'] = images[imageId].original;
+						imageCount ++;
+					}
+					maxImageCount = maxImageCount < imageCount ? imageCount : maxImageCount;
+				} catch (e){}
+
+				for(var id in dataObj.data){
+					this[id] = dataObj.data[id];
+					headerFieldNames.push(id);
+				}
+			}
+			// Generate the list elements to show
+			for(var id in infoData.members){
+				var member = infoData.members[id];
+				var listElement = new SimpleData(id, member);
+				$scope.simpleDataList.push(listElement);
+			}
+
+			//Generate the header elements to show
+			$scope.getImageOriginalSize = function(field){
+				return field + 'original';
+			}
+
+			for(var i = 0; i < maxImageCount; i++){
+				$scope.columnDefs.push({
+					field: getImageHeaderName(i),
+					width: 170,
+					groupable: false,
+					cellTemplate: '<div class=\"ui-grid-cell-contents\"><a ng-href=\"{{COL_FIELD}}\"><img ng-src=\"{{COL_FIELD}}\" lazy-src /></a></div>'
+				});
+			}
+
+			headerFieldNames = _.uniq(headerFieldNames);
+			//console.log(headerFieldNames);
+			for (var elt in headerFieldNames){
+				var element = headerFieldNames[elt];
+				$scope.columnDefs.push({
+					field: element,
+					width: 100,
+				});
+			}
+		});
+
+		$scope.gridOptions = {
+			data: $scope.simpleDataList,
+			columnDefs: $scope.columnDefs,
+			showGroupPanel: true,
+			enableSorting: true,
+			enableGridMenu: true,
+			enableColumnMoving: true,
+			enableColumnResizing: true,
+			enablePinning: true,
+		};
+
+	}).
 	filter('columnFilter', function(){
 		return function(elements, allheaderData){
 			if (!angular.isUndefined(elements) && !angular.isUndefined(allheaderData) && _.flatten(_.pluck(allheaderData, 'selectedValues')).length > 0){
