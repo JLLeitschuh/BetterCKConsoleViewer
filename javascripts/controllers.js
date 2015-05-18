@@ -55,7 +55,10 @@ angular.module('CKConsoleViewerApp.controllers', []).
 	}).
 
 
-
+	/*
+	 * OLD WAY OF VIEWING DATA. VERY HACKY.
+	 * XXX: Will eventually be removed
+	 */
 	controller('dataDisplayController', function($scope, $routeParams, ckConsole){
 		var groupName = $routeParams.group;
 
@@ -217,6 +220,9 @@ angular.module('CKConsoleViewerApp.controllers', []).
 		};
 
 	}).
+	/*
+	 * Uses the now outdated ng-grid framework
+	 */
 	controller('ngDataDisplayController',function($scope, $routeParams, ckConsole){
 		var groupName = $routeParams.group;
 		var getImageHeaderName = function(value){
@@ -305,6 +311,9 @@ angular.module('CKConsoleViewerApp.controllers', []).
 		};
 
 	}).
+	/*
+	 * Uses the new (ALPHA) versions of ui-grid framework.
+	 */
 	controller('uiDataDisplayController',function($scope, $routeParams, ckConsole){
 		var groupName = $routeParams.group;
 		var getImageHeaderName = function(value){
@@ -391,7 +400,6 @@ angular.module('CKConsoleViewerApp.controllers', []).
 			enableColumnResizing: true,
 			enablePinning: true,
 		};
-
 	}).
 	filter('columnFilter', function(){
 		return function(elements, allheaderData){
