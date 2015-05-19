@@ -5,6 +5,7 @@ angular.
 	module('CKConsoleViewerApp', [
 		'CKConsoleViewerApp.controllers',
 		'CKConsoleViewerApp.services',
+		// Old NG Grid
 		'ngGrid',
 		//UI Grid components
 		'ui.grid',
@@ -12,6 +13,9 @@ angular.
 		'ui.grid.resizeColumns',
 		'ui.grid.grouping',
 		'ui.grid.pinning',
+
+		//NGWidgets
+		'ngwidgets',
 		// Other
 		'ckServices',
 		'ui.bootstrap',
@@ -24,6 +28,7 @@ angular.
 			when("/group/:group", {templateUrl: "partials/dataDisplay.html", controller: "dataDisplayController"}).
 			when("/group-ngGrid/:group", {templateUrl: "partials/ngGridDataDisplay.html", controller: "ngDataDisplayController"}).
 			when("/group-uiGrid/:group", {templateUrl: "partials/uiGridDataDisplay.html", controller: "uiDataDisplayController"}).
+			when("/group-ngWidgetsGrid/:group", {templateUrl: "partials/ngWidgetsGridDataDisplay.html", controller: "ngWidgetsDataDisplayController"}).
 			otherwise({redirectTo: '/home'});
 		}
 	]);
