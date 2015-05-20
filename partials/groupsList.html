@@ -11,15 +11,17 @@
 			<option value="">-- Has Media --</option>
 		</select>
 		<table id="sheet">
-			<tr><th>Group Name</th><th>Viewer (Alpha)</th><th>Recorder</th><th>Dor</th><th>Has Media</th><th>Size</th></tr>
+			<tr><th>Group Name</th><th>Data Viewer</th><th>Recorder</th><th>Date of Recording (Dor)</th><th>Has Media</th><th>Size</th></tr>
 			<tr ng-repeat="data in dataList | filter:search:ignoreNullComparator | filter:search_text">
 				<td>
-					<a ng-href="./#/group/{{data.requestName}}">{{data.name}}</a>
+					{{data.name}}
 				</td>
 				<td>
-					<a ng-href="./#/group-ngGrid/{{data.requestName}}">ngGrid</a>
-					<a ng-href="./#/group-uiGrid/{{data.requestName}}">uiGrid</a>
-					<a ng-href="./#/group-ngWidgetsGrid/{{data.requestName}}">ngWidgets</a>
+					<a ng-href="./#/group/{{data.requestName}}">(Depreciated)</a><br>
+					<a ng-href="./#/group-ngGrid/{{data.requestName}}">ngGrid</a><br>
+					<a ng-href="./#/group-uiGrid/{{data.requestName}}">uiGrid</a><br>
+					<a ng-href="./#/group-ngWidgetsGrid/{{data.requestName}}">ngWidgets</a><br>
+					<a ng-href="./#/group-agGrid/{{data.requestName}}">angularGrid</a><br>
 				</td>
 				<td>{{data.recorder}}</td>
 				<td>{{data.birthCert.dor}}</td>

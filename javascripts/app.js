@@ -16,6 +16,8 @@ angular.
 
 		//NGWidgets
 		'ngwidgets',
+		// Angular Grid
+		'angularGrid',
 		// Other
 		'ckServices',
 		'ui.bootstrap',
@@ -29,6 +31,7 @@ angular.
 			when("/group-ngGrid/:group", {templateUrl: "partials/ngGridDataDisplay.html", controller: "ngDataDisplayController"}).
 			when("/group-uiGrid/:group", {templateUrl: "partials/uiGridDataDisplay.html", controller: "uiDataDisplayController"}).
 			when("/group-ngWidgetsGrid/:group", {templateUrl: "partials/ngWidgetsGridDataDisplay.html", controller: "ngWidgetsDataDisplayController"}).
+			when("/group-agGrid/:group", {templateUrl: "partials/agGridDataDisplay.html", controller: "agGridDataDisplayController"}).
 			otherwise({redirectTo: '/home'});
 		}
 	]);
