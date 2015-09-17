@@ -2,7 +2,7 @@
 
 Originally written by Jonathan Leitschuh for the 2014 IQP.
 
-If you are a current IQP Group, I'm sorry. Enjoy Venice.
+If you are a current IQP Group, Have Fun! Enjoy Venice.
 
 [There is a live link to this page live here.] (http://jlleitschuh.github.io/BetterCKConsoleViewer/)
 
